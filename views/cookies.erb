@@ -1,0 +1,12 @@
+<link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+<div class="bakedgoods" id="bakedgoods">
+    <% @cookies.each do |cookie|%>
+        <div class="bakedgood">
+            <div class="bakedgood-image"><img class="bakedgood-img" src="<%= cookie.image %>"></div>
+            <div class="bakedgood-name"><b><%= cookie.name %></b></div>
+            <div class="bakedgood-description"><%= cookie.description %></div>
+            <div class="bakedgood-price">Price: $<%= cookie.price %></div>
+    </div>
+    <%end%>
+
+

@@ -1,0 +1,10 @@
+<link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+<div class="bakedgoods">
+    <% @muffins.each do |muffin|%>
+        <div class="bakedgood">
+            <div class="bakedgood-image"><img class="bakedgood-img" src="<%= muffin.image %>"></div>
+            <div class="bakedgood-name"><b><%= muffin.name %></b></div>
+            <div class="bakedgood-description"><%= muffin.description %></div>
+            <div class="bakedgood-price">Price: $<%= muffin.price %></div>
+        </div>
+    <%end%>

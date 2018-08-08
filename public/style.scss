@@ -1,0 +1,436 @@
+@import 'mixins';
+@import 'fonts';
+
+body{
+    @include flexbox(flex, column, center, flex-start);
+    width: 100%;
+
+    a, a:active, a:link, a:visited{
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+    a:hover{
+        color: mistyrose;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+    }
+}
+
+header{
+    @include flexbox(flex, row, center, space-around);
+    width: 100%;
+    background: repeating-linear-gradient(
+            to right,
+            #7D3828,
+            #7D3828 40px,
+            #9D432E 40px,
+            #9D432E 90px
+        );
+    #header-middle{
+        @include flexbox(flex, column, center, center);
+        width: 34%;
+        margin: 25px;
+        #logo{
+            @include flexbox(flex, column, center, center);
+            width: 225px;
+            height: 80px;
+            font-family: $logo;
+            font-size: 200%;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 0.9;
+            background-color: beige;
+            border: 5px dotted black;
+            border-radius: 50%;
+        }
+    }
+}
+        
+section{
+    @include flexbox(flex, column, center, center);
+    width: 100%;
+    #navigation-bar{
+        @include flexbox(flex, row, center, space-evenly);
+        width: 100%;
+        .tab{
+            @include flexbox(flex, column, center, center);
+            background: repeating-linear-gradient(
+            to right,
+            #7D3828,
+            #7D3828 40px,
+            #9D432E 40px,
+            #9D432E 90px
+            );
+            width: 34%;
+            height: 60px;
+            margin: -5px 0px 15px 0px;
+            font-size: 120%;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px 10px 100px 100px;
+            box-shadow: 5px 10px 18px #888888;
+        }
+    }
+    #main-outer{
+        @include flexbox(flex, column, center, flex-start);
+        margin-top: 10px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;
+        height: 500px;
+        width: 90%;
+        overflow: scroll;
+        box-shadow: 5px 10px 18px #888888;
+        #main-inner{
+            @include flexbox(flex, column, center, flex-end);
+            width: 90%;
+            #feature-top{
+                @include flexbox(flex, row, flex-end, center);
+                width: 90%;
+                height: 180px;
+                a, a:active, a:link, a:visited{
+                    width: 23%;
+                }
+                #cookie-draw{
+                    @include flexbox(flex, column, center, center);
+                    width: 100%;
+                    margin: 2px;
+                    .cookie-row{
+                        @include flexbox(flex, row, center, center);
+                        width: 100%;
+                        .cookie{
+                            margin: 1px;
+                            width: 100%;
+                            height: 10px;
+                            border-radius: 10px 10px 0px 0px;
+                            
+                        }
+                        #cookie1{
+                            background-color: #695130;
+                            
+                        }
+                        #cookie3{
+                            background-color: #ecce1f;
+                        }
+                    }
+                    .cookie-row1{
+                        @include flexbox(flex, row, center, center);
+                        width: 70%;
+                        .cookie{
+                            margin: 1px;
+                            width: 100%;
+                            height: 10px;
+                            border-radius: 10px 10px 0px 0px;
+                            box-shadow: 5px 10px 18px #888888;
+                        }
+                        #cookie1{
+                            background-color: #695130;
+                        }
+                        #cookie2{
+                            background-color: #F2B600;
+                        }
+                    }
+                    .cookie-row2{
+                        @include flexbox(flex, row, center, center);
+                        width: 35%;
+                        .cookie{
+                            margin: 1px;
+                            width: 100%;
+                            height: 10px;
+                            border-radius: 10px 10px 0px 0px;
+                            box-shadow: 5px 10px 18px #888888;
+                        }
+                        #cookie1{
+                            background-color: #695130;
+                        }
+                    }
+                    .tin-row{
+                        width: 100%;
+                        height: 7px;
+                        background-color: rebeccapurple;
+                        border-radius: 0px 0px 10px 10px;
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                }
+                #cake-draw{
+                    @include flexbox(flex, column, center, center);
+                    width: 100%;
+                    .cake-top{
+                        @include flexbox(flex, row, center, center);  
+                        width: 100%;
+                        .cherries{
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: crimson;
+                        }
+                    }
+                    .cake-layer1{
+                        margin: 0px 2px;
+                        width: 90%;
+                        height: 7px;
+                        background-color: beige;
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                    .cake-layer2{
+                        margin: 0px 2px;
+                        width: 90%;
+                        height: 17px;
+                        background-color: #79391b;
+                        border-radius: 0px 0px 5px 5px;
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                    .tin-row{
+                        margin: 2px 2px;
+                        width: 90%;
+                        height: 7px;
+                        background-color: turquoise;
+                        border-radius: 0px 0px 10px 10px;
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                    .pedestal{
+                        width: 8%;
+                        height: 30px;
+                        margin: -2px;
+                        background-color: turquoise;
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                    .tin-row1{
+                        margin: 2px 2px;
+                        width: 90%;
+                        height: 7px;
+                        background-color: turquoise;
+                        border-radius: 10px 10px 0px 0px;
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                }
+                #muffin-draw{
+                    @include flexbox(flex, column, center, center);
+                    width: 80%;
+                    margin: 2px;
+                    .muffin-row3{
+                        @include flexbox(flex, row, center, center);
+                        width: 35%;
+                        .muffin{
+                            @include flexbox(flex, column, center, center);
+                            width: 100%;
+                            .cookie{
+                                margin: 1px;
+                                width: 80%;
+                                height: 13px;
+                                border-radius: 10px 10px 0px 0px;
+                            }
+                            #cookie1{
+                                background-color: #695130;
+                            }
+                            .muffinbot{
+                                width: 80%;
+                                height: 0; 
+                                border-left: 1px solid transparent;
+                                border-right: 1px solid transparent;
+                            }
+                            #muffinbot3{
+                                border-top: 10px solid fuchsia;
+                            }
+                        }
+                    }
+                    .muffin-row2{
+                        @include flexbox(flex, row, center, center);
+                        width: 70%;
+                        .muffin{
+                            @include flexbox(flex, column, center, center);
+                            width: 100%;
+                            .cookie{
+                                margin: 1px;
+                                width: 80%;
+                                height: 13px;
+                                border-radius: 10px 10px 0px 0px;
+                            }
+                            #cookie4{
+                                background-color: pink;
+                            }
+                            #cookie5{
+                                background-color: white;
+                            }
+                            .muffinbot{
+                                width: 80%;
+                                height: 0; 
+                                border-top: 10px solid #faaa18;
+                                border-left: 1px solid transparent;
+                                border-right: 1px solid transparent;
+                            }
+                        }
+                    }
+                    .muffin-row{
+                        @include flexbox(flex, row, center, center);
+                        width: 100%;
+                        .muffin{
+                            @include flexbox(flex, column, center, center);
+                            width: 100%;
+                            .cookie{
+                                margin: 1px;
+                                width: 80%;
+                                height: 10px;
+                                background-color: #695130;
+                                border-radius: 10px 10px 0px 0px;
+                            }
+                            #cookie1{
+                                background-color: #695130;
+                            }
+                            #cookie4{
+                                background-color: pink;
+                            }
+                            #cookie6{
+                                background-color: turquoise;
+                            }
+                            .muffinbot{
+                                width: 80%;
+                                height: 0; 
+                                border-left: 1px solid transparent;
+                                border-right: 1px solid transparent;
+                            }
+                            #muffinbot1{
+                                border-top: 10px solid turquoise;
+                            }
+                            #muffinbot2{
+                                border-top: 10px solid rebeccapurple;
+                            }
+                            #muffinbot3{
+                                border-top: 10px solid fuchsia;
+                            }
+                        }
+                    }
+                    .tin-row{
+                        width: 100%;
+                        height: 7px;
+                        background-color: #00B950;
+                        border-radius: 0px 0px 10px 10px;
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                }
+                #register-draw{
+                    @include flexbox(flex, column, center, center);
+                    width: 20%;
+                    #register-pad{
+                        @include flexbox(flex, column, center, center);
+                        position: relative;
+                        top: -20px;
+                        width: 100%;
+                        height: 65px;
+                        background-color: white;
+                        border-radius: 10px 10px 10px 10px;
+                        box-shadow: 5px 10px 18px #888888;
+                        z-index: 0;
+                            #register-stand{
+                                width: 10%;
+                                height: 60px;
+                                position: relative;
+                                top: 30px;
+                                background-color: white;
+                                border-radius: 10px 10px 10px 10px;
+                                box-shadow: 5px 3px 10px #888888;
+                                z-index: 2;
+                            }
+                    }
+                    #register-base{
+                        margin-bottom: 3px;
+                        width: 90%;
+                        height: 7px;
+                        background-color: white;
+                        border-radius: 10px 10px 10px 10px;
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                }
+            }
+            #feature-bottom{
+                @include flexbox(flex, column, center, flex-start);
+                width: 90%;
+                #table-top{
+                    border-radius: 1px;
+                    background-color: #7D3828;
+                    box-shadow: 5px 10px 18px #888888;
+                    width: 90%;
+                    height: 10px;
+                }
+                #floor{
+                    @include flexbox(flex, column, center, center); 
+                    width: 130%;
+                    height: 200px;
+                    background-color: #eee;
+                    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+                    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+                    background-size:60px 60px;
+                    background-position:0 0, 30px 30px;
+                    position: relative;
+                    top: 110px;
+                
+                    #table-bottom{
+                        @include flexbox(flex, row, flex-start, space-around);
+                        margin: 2px 0px 20px 0px;
+                        padding: 6px 5px 5px 5px;
+                        border-radius: 5px;
+                        background-color: #83663D;
+                        color: white;
+                        text-align: center;
+                        width: 70%;
+                        height: 200px;
+                        position: relative;
+                        top: -110px;
+                    }
+                }
+            }
+        }
+    }
+}
+.bakedgoods{
+    @include flexbox(flex, row, flex-start, space-evenly);
+    width: 100%;
+    flex-flow: row wrap;
+    .bakedgood{
+        @include flexbox(flex, column, center, space-around);
+        margin: 10px 5px;
+        padding: 10px;
+        text-align: center;
+        width: 30%;
+        height: 350px;
+        box-shadow: 5px 5px 10px #888888;
+        .bakedgood-image {
+            text-align: center;
+           .bakedgood-img {
+                width: 90%;
+                height: auto;
+           }
+        }
+        .bakedgood-name, .bakedgood-price{
+            text-transform: uppercase;
+        }
+       
+    }
+}
+footer{
+    @include flexbox(flex, column, center, center);
+    margin: 20px 0px;
+    color: gray;
+    letter-spacing: 1.5px;
+    #social{
+        text-align: center;
+        .icons{
+            width: 30%;
+            height: auto;
+        }
+    }
+}
+
+@media all and (max-width: 500px){
+    .bakedgoods{
+        .bakedgood{
+            width: 45%;
+        }
+    } 
+    #table-bottom{
+        font-size: 75%;
+    }
+}
