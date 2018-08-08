@@ -13,3 +13,5 @@ Demonstrate understanding of how to use the Sinatra microframework to create a f
 * Sinatra
 * VSCode
 * Koala
+
+<img src="https://raw.githubusercontent.com/xlisachan/FriendlyBakery/master/public/images/Screen%20Shot%20of%20front%20page.png"/>
