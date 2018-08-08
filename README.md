@@ -1,0 +1,15 @@
+# Friendly Bakery - Mad Batter Bakery
+Demonstrate understanding of how to use the Sinatra microframework to create a fullstack website for a bakery that displays information on cookies, cakes, and muffins offered for sale.
+
+# Requirements
+* Look and feel like a bakery website
+* Front page that links to subcategory pages
+* A page for each subcategory (cookies, cakes, and muffins)
+
+# Built With
+* HTML
+* Sass
+* Ruby
+* Sinatra
+* VSCode
+* Koala
