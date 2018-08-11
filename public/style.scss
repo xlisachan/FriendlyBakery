@@ -19,19 +19,18 @@ body{
 }
 
 header{
-    @include flexbox(flex, row, center, space-around);
     width: 100%;
-    background: repeating-linear-gradient(
+    #header-middle{
+        @include flexbox(flex, column, center, center);
+        width: 100%;
+        padding: 20px;
+        background: repeating-linear-gradient(
             to right,
             $banner-dark,
             $banner-dark 40px,
             $banner-med 40px,
             $banner-med 90px
         );
-    #header-middle{
-        @include flexbox(flex, column, center, center);
-        width: 34%;
-        margin: 25px;
         #logo{
             @include flexbox(flex, column, center, center);
             width: 225px;
@@ -47,26 +46,24 @@ header{
             border-radius: 50%;
         }
     }
-}
-        
-section{
-    @include flexbox(flex, column, center, center);
-    width: 100%;
     #navigation-bar{
         @include flexbox(flex, row, center, space-evenly);
         width: 100%;
+        margin-bottom: 20px;
+        a {
+            width: 100%;
+        }
         .tab{
-            @include flexbox(flex, column, center, center);
+            @include flexbox(flex, row, center, center);
             background: repeating-linear-gradient(
-            to right,
-            $banner-dark,
-            $banner-dark 40px,
-            $banner-med 40px,
-            $banner-med 90px
+                to right,
+                $banner-dark,
+                $banner-dark 40px,
+                $banner-med 40px,
+                $banner-med 90px
             );
-            width: 34%;
+            width: 100%;
             height: 60px;
-            margin: -5px 0px 15px 0px;
             font-size: 120%;
             font-weight: bold;
             text-align: center;
@@ -75,13 +72,18 @@ section{
             box-shadow: 5px 10px 18px #888888;
         }
     }
+}
+        
+section{
+    @include flexbox(flex, column, center, center);
+    width: 100%;
     #main-outer{
         @include flexbox(flex, column, center, flex-start);
         margin-top: 10px;
         padding: 10px;
         background-color: white;
         border-radius: 10px 10px 10px 10px;
-        height: 500px;
+        height: 510px;
         width: 90%;
         overflow: scroll;
         box-shadow: 5px 10px 18px #888888;
@@ -92,6 +94,8 @@ section{
                 @include flexbox(flex, row, flex-end, center);
                 width: 90%;
                 height: 180px;
+                position: relative;
+                top: 90px;
                 a, a:active, a:link, a:visited{
                     width: 23%;
                 }
@@ -107,7 +111,6 @@ section{
                             width: 100%;
                             height: 10px;
                             border-radius: 10px 10px 0px 0px;
-                            box-shadow: 5px 10px 18px #888888;
                         }
                         #cookie1{
                             background-color: $chocolate;
@@ -125,7 +128,7 @@ section{
                             width: 100%;
                             height: 10px;
                             border-radius: 10px 10px 0px 0px;
-                            box-shadow: 5px 10px 18px #888888;
+
                         }
                         #cookie1{
                             background-color: $chocolate;
@@ -142,7 +145,6 @@ section{
                             width: 100%;
                             height: 10px;
                             border-radius: 10px 10px 0px 0px;
-                            box-shadow: 5px 10px 18px #888888;
                         }
                         #cookie1{
                             background-color: $chocolate;
@@ -349,33 +351,35 @@ section{
                     box-shadow: 5px 10px 18px #888888;
                     width: 90%;
                     height: 10px;
-                }
-                #floor{
-                    @include flexbox(flex, column, center, center); 
-                    width: 130%;
-                    height: 200px;
-                    background-color: #eee;
-                    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
-                    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
-                    background-size:60px 60px;
-                    background-position:0 0, 30px 30px;
                     position: relative;
-                    top: 110px;
-                
-                    #table-bottom{
-                        @include flexbox(flex, row, flex-start, space-around);
-                        margin: 2px 0px 20px 0px;
-                        padding: 6px 5px 5px 5px;
-                        border-radius: 5px;
-                        background-color: #83663D;
-                        color: white;
-                        text-align: center;
-                        width: 70%;
-                        height: 200px;
-                        position: relative;
-                        top: -110px;
-                    }
+                    top: 90px;
                 }
+                #table-bottom{
+                    @include flexbox(flex, row, flex-start, space-around);
+                    margin: 2px 0px 20px 0px;
+                    padding: 6px 5px 5px 5px;
+                    border-radius: 5px;
+                    background-color: #83663D;
+                    color: white;
+                    text-align: center;
+                    width: 90%;
+                    height: 270px;
+                    z-index: 1;
+                    position: relative;
+                    top: 90px;
+                }
+                 #floor{
+                        width: 130%;
+                        height: 200px;
+                        background-color: #eee;
+                        background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+                        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+                        background-size:60px 60px;
+                        background-position:0 0, 30px 30px;
+                        position: relative;
+                        z-index: 0;
+                        top: 10px;
+                    }
             }
         }
     }
@@ -413,7 +417,7 @@ footer{
     #social{
         text-align: center;
         .icons{
-            width: 30%;
+            width: 20%;
             height: auto;
         }
     }
@@ -422,7 +426,7 @@ footer{
 @media all and (max-width: 500px){
     .bakedgoods{
         .bakedgood{
-            width: 50%;
+            width: 100%;
         }
     } 
     #table-bottom{

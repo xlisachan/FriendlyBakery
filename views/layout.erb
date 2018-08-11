@@ -15,18 +15,15 @@
 <body>
     <header>
         <div id="header-middle" class="header">
-            <a href="/">
-                <div id="logo" style="color: black">Mad Batter<br/>Bakery
-                </div>
-            </a>
+            <a href="/"><div id="logo" style="color: black">Mad Batter<br/>Bakery</div></a>
+        </div>
+        <div id="navigation-bar">
+            <a href="/cookies"><div class="tab" id="cookies">COOKIES</div></a>
+            <a href="/cakes"><div class="tab" id="cakes">CAKES</div></a>
+            <a href="/muffins"><div class="tab" id="muffins">MUFFINS</div></a>
         </div>
     </header>
     <section id="main">
-        <div id="navigation-bar">
-            <div class="tab" id="cookies"><a  href="/cookies">COOKIES</a></div>
-            <div class="tab" id="cakes"><a href="/cakes">CAKES</a></div>
-            <div class="tab" id="muffins"><a href="/muffins">MUFFINS</a></div>
-        </div>
         <div id="main-outer" class="main">
            <%= yield %>
         </div>
