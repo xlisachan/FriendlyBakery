@@ -90,6 +90,7 @@ section{
         #main-inner{
             @include flexbox(flex, column, center, flex-end);
             width: 90%;
+            height: 490px;
             #feature-top{
                 @include flexbox(flex, row, flex-end, center);
                 width: 90%;
@@ -363,14 +364,14 @@ section{
                     color: white;
                     text-align: center;
                     width: 90%;
-                    height: 270px;
+                    height: 250px;
                     z-index: 1;
                     position: relative;
                     top: 90px;
                 }
                  #floor{
                         width: 130%;
-                        height: 200px;
+                        height: 150px;
                         background-color: #eee;
                         background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
                         linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
