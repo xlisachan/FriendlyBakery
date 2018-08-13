@@ -468,7 +468,10 @@ footer{
 }
 
 //Media Query - iPhone 6/7/8
-@media all and (min-width: 375px) and (max-width: 414px){
+@media all and (min-width: 360px) and (max-width: 414px){
+    body{
+        font-size: 70%;
+   
     section #main-outer{
         #main-inner{
             #floor{
@@ -480,4 +483,5 @@ footer{
     .bakedgoods .bakedgood{
         width: 100%;
     }
+}
 }

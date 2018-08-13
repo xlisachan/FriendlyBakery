@@ -438,11 +438,12 @@ footer {
 
   .bakedgoods .bakedgood {
     width: 100%; } }
-@media all and (min-width: 375px) and (max-width: 414px) {
-  section #main-outer #main-inner #floor {
-    height: 150px; }
-
-  .bakedgoods .bakedgood {
-    width: 100%; } }
+@media all and (min-width: 360px) and (max-width: 414px) {
+  body {
+    font-size: 70%; }
+    body section #main-outer #main-inner #floor {
+      height: 150px; }
+    body .bakedgoods .bakedgood {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
