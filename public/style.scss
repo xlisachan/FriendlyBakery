@@ -369,18 +369,19 @@ section{
                     position: relative;
                     top: 90px;
                 }
-                 #floor{
-                        width: 130%;
-                        height: 150px;
-                        background-color: #eee;
-                        background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
-                        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
-                        background-size:60px 60px;
-                        background-position:0 0, 30px 30px;
-                        position: relative;
-                        z-index: 0;
-                        top: 10px;
-                    }
+                
+            }
+            #floor{
+                width: 130%;
+                height: 150px;
+                background-color: #eee;
+                background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+                linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+                background-size:60px 60px;
+                background-position:0 0, 30px 30px;
+                position: relative;
+                z-index: 0;
+                top: 10px;
             }
         }
     }
