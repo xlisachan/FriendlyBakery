@@ -1,12 +1,39 @@
 <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
-<div class="bakedgoods" id="bakedgoods">
+<div class="bakedgoods">
     <% @cookies.each do |cookie|%>
-        <div class="bakedgood">
-            <div class="bakedgood-image"><img class="bakedgood-img" src="<%= cookie.image %>"></div>
-            <div class="bakedgood-name"><b><%= cookie.name %></b></div>
-            <div class="bakedgood-description"><%= cookie.description %></div>
-            <div class="bakedgood-price">Price: $<%= cookie.price %></div>
-    </div>
-    <%end%>
+        <!-- Button trigger modal -->
+        <button type="button" class="bakedgood btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <div class="bakedgood">
+                <div class="bakedgood-image"><img class="bakedgood-img" src="<%= cookie.image %>"></div>
+                <div class="bakedgood-name"><b><%= cookie.name %></b></div>
+                <div class="bakedgood-price">Price: $<%= cookie.price %></div>
+            </div>
+        </button>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><b><%= cookie.name %></b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="bakedgood modal-body">
+                        <img class="bakedgood-img" src="<%= cookie.image %>">
+                        <br/>
+                        <%= cookie.description %>
+                        <br/>
+                        <br/>
+                        Price: $<%= cookie.price %>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    <%end%>
+</div>
 
