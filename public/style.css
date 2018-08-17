@@ -388,7 +388,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  .bakedgoods .btn, .bakedgoods .btn-primary, .bakedgoods .btn .bakedgood, .bakedgoods .btn-primary .bakedgood {
+  .bakedgoods .btn, .bakedgoods .btn-primary {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,17 +402,17 @@ section {
     text-transform: uppercase;
     text-align: center;
     width: 30%; }
-    .bakedgoods .btn :hover, .bakedgoods .btn-primary :hover, .bakedgoods .btn .bakedgood :hover {
+    .bakedgoods .btn :hover, .bakedgoods .btn-primary :hover {
       background-color: beige; }
-    .bakedgoods .btn .bakedgood, .bakedgoods .btn-primary .bakedgood, .bakedgoods .btn .bakedgood .bakedgood {
+    .bakedgoods .btn .bakedgood, .bakedgoods .btn-primary .bakedgood {
       width: 100%;
       box-shadow: 5px 5px 10px #888888; }
-      .bakedgoods .btn .bakedgood .bakedgood-image, .bakedgoods .btn-primary .bakedgood .bakedgood-image, .bakedgoods .btn .bakedgood .bakedgood .bakedgood-image {
+      .bakedgoods .btn .bakedgood .bakedgood-image, .bakedgoods .btn-primary .bakedgood .bakedgood-image {
         text-align: center; }
-        .bakedgoods .btn .bakedgood .bakedgood-image .bakedgood-img, .bakedgoods .btn-primary .bakedgood .bakedgood-image .bakedgood-img, .bakedgoods .btn .bakedgood .bakedgood .bakedgood-image .bakedgood-img {
+        .bakedgoods .btn .bakedgood .bakedgood-image .bakedgood-img, .bakedgoods .btn-primary .bakedgood .bakedgood-image .bakedgood-img {
           width: 90%;
           height: auto; }
-      .bakedgoods .btn .bakedgood .bakedgood-name, .bakedgoods .btn .bakedgood .bakedgood-price, .bakedgoods .btn-primary .bakedgood .bakedgood-name, .bakedgoods .btn .bakedgood .bakedgood .bakedgood-name, .bakedgoods .btn-primary .bakedgood .bakedgood-price, .bakedgoods .btn .bakedgood .bakedgood .bakedgood-price {
+      .bakedgoods .btn .bakedgood .bakedgood-name, .bakedgoods .btn .bakedgood .bakedgood-price, .bakedgoods .btn-primary .bakedgood .bakedgood-name, .bakedgoods .btn-primary .bakedgood .bakedgood-price {
         text-transform: uppercase; }
 
 footer {
@@ -432,11 +432,17 @@ footer {
 
 @media all and (min-width: 415px) and (max-width: 768px) {
   section #main-outer {
-    height: 68vh; } }
-@media screen and (min-width: 320px) and (max-width: 414px) {
-  body section #main-outer {
-    height: 75vh; }
-    body section #main-outer #main-inner #feature-bottom #table-bottom {
-      font-size: 1.5vh; } }
+    height: 68vh; }
+
+  .bakedgoods .btn, .bakedgoods .btn-primary {
+    width: 40%; } }
+@media all and (min-width: 320px) and (max-width: 414px) {
+  section #main-outer {
+    height: 66vh; }
+    section #main-outer #main-inner #feature-bottom #table-bottom {
+      font-size: 1.5vh; }
+
+  .bakedgoods .btn, .bakedgoods .btn-primary {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
