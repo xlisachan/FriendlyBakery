@@ -1,11 +1,6 @@
 <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
 <div class="bakedgoods">
-<<<<<<< HEAD
-
-    <% @cakes.each do |cake|%>
-=======
     <% @cakes.each_with_index do |cake, idx|%>
->>>>>>> modals
         <!-- Button trigger modal -->
         <button type="button" class="bakedgood btn btn-primary" data-toggle="modal" data-target="#bakedgood<%= idx %>">
             <div class="bakedgood">
