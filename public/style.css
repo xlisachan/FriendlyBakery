@@ -7,7 +7,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
   body a, body a:active, body a:link, body a:visited {
     color: white;
     letter-spacing: 1.5px;
@@ -25,17 +25,17 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20px 0px;
+    height: 13vh;
     background: repeating-linear-gradient(to right, #7D3828, #7D3828 40px, #9D432E 40px, #9D432E 90px); }
     header #header-middle #logo {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 225px;
-      height: 80px;
+      width: 30vh;
+      height: 10vh;
       font-family: "Love Ya Like A Sister", cursive;
-      font-size: 200%;
+      font-size: 4vh;
       font-weight: bold;
       text-align: center;
       letter-spacing: 1px;
@@ -59,8 +59,8 @@ header {
       justify-content: center;
       background: repeating-linear-gradient(to right, #7D3828, #7D3828 40px, #9D432E 40px, #9D432E 90px);
       width: 100%;
-      height: 60px;
-      font-size: 120%;
+      height: 7vh;
+      font-size: 2vh;
       font-weight: bold;
       text-align: center;
       border: 2px solid black;
@@ -79,7 +79,7 @@ section {
     align-items: center;
     justify-content: flex-start;
     width: 90%;
-    height: 480px;
+    height: 66vh;
     margin-top: 10px;
     border-radius: 10px 10px 10px 10px;
     overflow: scroll;
@@ -97,7 +97,7 @@ section {
         justify-content: center;
         width: 90%;
         position: relative;
-        top: 70px; }
+        top: 80px; }
         section #main-outer #main-inner #feature-top a, section #main-outer #main-inner #feature-top a:active, section #main-outer #main-inner #feature-top a:link, section #main-outer #main-inner #feature-top a:visited {
           width: 23%; }
         section #main-outer #main-inner #feature-top #cookie-draw {
@@ -116,7 +116,7 @@ section {
             section #main-outer #main-inner #feature-top #cookie-draw .cookie-row .cookie {
               margin: 1px;
               width: 100%;
-              height: 10px;
+              height: 1.3vh;
               border-radius: 10px 10px 0px 0px; }
             section #main-outer #main-inner #feature-top #cookie-draw .cookie-row #cookie1 {
               background-color: #695130; }
@@ -131,7 +131,7 @@ section {
             section #main-outer #main-inner #feature-top #cookie-draw .cookie-row1 .cookie {
               margin: 1px;
               width: 100%;
-              height: 10px;
+              height: 1.3vh;
               border-radius: 10px 10px 0px 0px; }
             section #main-outer #main-inner #feature-top #cookie-draw .cookie-row1 #cookie1 {
               background-color: #695130; }
@@ -146,13 +146,13 @@ section {
             section #main-outer #main-inner #feature-top #cookie-draw .cookie-row2 .cookie {
               margin: 1px;
               width: 100%;
-              height: 10px;
+              height: 1.3vh;
               border-radius: 10px 10px 0px 0px; }
             section #main-outer #main-inner #feature-top #cookie-draw .cookie-row2 #cookie1 {
               background-color: #695130; }
           section #main-outer #main-inner #feature-top #cookie-draw .tin-row, section #main-outer #main-inner #feature-top #cookie-draw #cake-draw .tin-row1, section #main-outer #main-inner #feature-top #cake-draw #cookie-draw .tin-row1 {
             width: 100%;
-            height: 7px;
+            height: 1vh;
             background-color: rebeccapurple;
             border-radius: 0px 0px 10px 10px;
             box-shadow: 5px 10px 18px #888888; }
@@ -169,30 +169,30 @@ section {
             justify-content: center;
             width: 100%; }
             section #main-outer #main-inner #feature-top #cake-draw .cake-top .cherries {
-              width: 10px;
-              height: 10px;
+              width: 1.5vh;
+              height: 1.5vh;
               border-radius: 50%;
               background-color: crimson; }
           section #main-outer #main-inner #feature-top #cake-draw .cake-layer1, section #main-outer #main-inner #feature-top #cake-draw .cake-layer2 {
             margin: 0px 2px;
             width: 90%;
-            height: 7px;
+            height: 1vh;
             background-color: beige;
             box-shadow: 5px 10px 18px #888888; }
           section #main-outer #main-inner #feature-top #cake-draw .cake-layer2 {
-            height: 17px;
+            height: 2vh;
             background-color: #79391b;
             border-radius: 0px 0px 5px 5px; }
           section #main-outer #main-inner #feature-top #cake-draw .tin-row, section #main-outer #main-inner #feature-top #cake-draw .tin-row1 {
             margin: 2px 2px;
             width: 90%;
-            height: 7px;
+            height: 1vh;
             background-color: turquoise;
             border-radius: 0px 0px 10px 10px;
             box-shadow: 5px 10px 18px #888888; }
           section #main-outer #main-inner #feature-top #cake-draw .pedestal {
             width: 8%;
-            height: 30px;
+            height: 4vh;
             margin: -2px;
             background-color: turquoise;
             box-shadow: 5px 10px 18px #888888; }
@@ -217,10 +217,10 @@ section {
               align-items: center;
               justify-content: center;
               width: 100%; }
-              section #main-outer #main-inner #feature-top #muffin-draw .muffin-row3 .muffin .cookie {
+              section #main-outer #main-inner #feature-top #muffin-draw .muffin-row3 .muffin .muffintop {
                 margin: 1px;
                 width: 80%;
-                height: 13px;
+                height: 1.5vh;
                 border-radius: 10px 10px 0px 0px; }
               section #main-outer #main-inner #feature-top #muffin-draw .muffin-row3 .muffin #cookie1 {
                 background-color: #695130; }
@@ -243,10 +243,10 @@ section {
               align-items: center;
               justify-content: center;
               width: 100%; }
-              section #main-outer #main-inner #feature-top #muffin-draw .muffin-row2 .muffin .cookie {
+              section #main-outer #main-inner #feature-top #muffin-draw .muffin-row2 .muffin .muffintop {
                 margin: 1px;
                 width: 80%;
-                height: 13px;
+                height: 1.5vh;
                 border-radius: 10px 10px 0px 0px; }
               section #main-outer #main-inner #feature-top #muffin-draw .muffin-row2 .muffin #cookie4 {
                 background-color: pink; }
@@ -270,10 +270,10 @@ section {
               align-items: center;
               justify-content: center;
               width: 100%; }
-              section #main-outer #main-inner #feature-top #muffin-draw .muffin-row .muffin .cookie {
+              section #main-outer #main-inner #feature-top #muffin-draw .muffin-row .muffin .muffintop {
                 margin: 1px;
                 width: 80%;
-                height: 10px;
+                height: 1.5vh;
                 background-color: #695130;
                 border-radius: 10px 10px 0px 0px; }
               section #main-outer #main-inner #feature-top #muffin-draw .muffin-row .muffin #cookie1 {
@@ -295,7 +295,7 @@ section {
                 border-top: 10px solid fuchsia; }
           section #main-outer #main-inner #feature-top #muffin-draw .tin-row, section #main-outer #main-inner #feature-top #muffin-draw #cake-draw .tin-row1, section #main-outer #main-inner #feature-top #cake-draw #muffin-draw .tin-row1 {
             width: 100%;
-            height: 7px;
+            height: 1vh;
             background-color: #00B950;
             border-radius: 0px 0px 10px 10px;
             box-shadow: 5px 10px 18px #888888; }
@@ -313,14 +313,14 @@ section {
             position: relative;
             top: -20px;
             width: 100%;
-            height: 65px;
+            height: 10vh;
             background-color: white;
             border-radius: 10px 10px 10px 10px;
             box-shadow: 5px 10px 18px #888888;
             z-index: 0; }
             section #main-outer #main-inner #feature-top #register-draw #register-pad #register-stand {
               width: 10%;
-              height: 60px;
+              height: 9vh;
               position: relative;
               top: 30px;
               background-color: white;
@@ -330,7 +330,7 @@ section {
           section #main-outer #main-inner #feature-top #register-draw #register-base {
             margin-bottom: 3px;
             width: 90%;
-            height: 7px;
+            height: 1vh;
             background-color: white;
             border-radius: 10px 10px 10px 10px;
             box-shadow: 5px 10px 18px #888888; }
@@ -341,30 +341,31 @@ section {
         justify-content: flex-start;
         width: 100%;
         position: relative;
-        top: 70px; }
+        top: 80px; }
         section #main-outer #main-inner #feature-bottom #table-top {
           border-radius: 2px;
           background-color: #7D3828;
           box-shadow: 5px 10px 18px #888888;
           width: 80%;
-          height: 10px; }
+          height: 2vh; }
         section #main-outer #main-inner #feature-bottom #table-bottom {
           display: flex;
           flex-direction: row;
           align-items: flex-start;
           justify-content: space-around;
           width: 80%;
-          height: 250px;
+          height: 30vh;
           margin: 2px 0px 20px 0px;
           padding: 6px 5px 5px 5px;
           border-radius: 5px;
           background-color: #83663D;
           color: white;
+          font-size: 2vh;
           text-align: center;
           z-index: 1; }
       section #main-outer #main-inner #floor {
-        width: 102%;
-        height: 110px;
+        width: 100%;
+        height: 19vh;
         background-color: #eee;
         background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
         background-size: 60px 60px;
@@ -380,6 +381,8 @@ section {
   flex-flow: row wrap; }
   .bakedgoods .modal-header {
     text-transform: uppercase; }
+    .bakedgoods .modal-header .modal-title {
+      white-space: nowrap; }
   .bakedgoods .modal-body {
     display: flex;
     flex-direction: column;
@@ -427,27 +430,13 @@ footer {
       width: 20%;
       height: auto; }
 
-@media all and (min-width: 771px) and (max-width: 1025px) {
+@media all and (min-width: 415px) and (max-width: 768px) {
   section #main-outer {
-    height: 1000px; }
-    section #main-outer #main-inner {
-      position: relative;
-      top: 300px; }
-    section #main-outer #main-inner #table-bottom {
-      height: 450px; }
-    section #main-outer #main-inner #floor {
-      height: 310px; }
-    section #main-outer button {
-      width: 40%; } }
-@media all and (min-width: 421px) and (max-width: 770px) {
+    height: 68vh; } }
+@media all and (min-width: 320x) and (max-width: 414px) {
   section #main-outer {
-    height: 700px; } }
-@media all and (max-width: 420px) {
-  body {
-    font-size: 70%; }
-    body section #main-outer {
-      height: 380px; }
-      body section #main-outer button {
-        width: 100%; } }
+    height: 66vh; }
+    section #main-outer #main-inner #feature-bottom #table-bottom {
+      font-size: 1.5vh; } }
 
 /*# sourceMappingURL=style.css.map */
