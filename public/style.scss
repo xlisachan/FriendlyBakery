@@ -435,9 +435,9 @@ footer{
     letter-spacing: 1.5px;
     #social{
         text-align: center;
-        .icons{
-            width: 20%;
-            height: auto;
+        a {
+            font-size: 3vw;
+            color: gray;
         }
     }
 }
@@ -460,5 +460,12 @@ footer{
     }
     .bakedgoods .btn, .bakedgoods .btn-primary{
         width: 100%;
+    }
+    footer{
+        #social{
+            a {
+                font-size: 4vw;   
+            }
+        }
     }
 }

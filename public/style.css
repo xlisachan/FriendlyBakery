@@ -426,9 +426,9 @@ footer {
   letter-spacing: 1.5px; }
   footer #social {
     text-align: center; }
-    footer #social .icons {
-      width: 20%;
-      height: auto; }
+    footer #social a {
+      font-size: 3vw;
+      color: gray; }
 
 @media all and (min-width: 415px) and (max-width: 768px) {
   section #main-outer {
@@ -443,6 +443,9 @@ footer {
       font-size: 1.5vh; }
 
   .bakedgoods .btn, .bakedgoods .btn-primary {
-    width: 100%; } }
+    width: 100%; }
+
+  footer #social a {
+    font-size: 4vw; } }
 
 /*# sourceMappingURL=style.css.map */
