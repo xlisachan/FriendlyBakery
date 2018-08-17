@@ -410,7 +410,7 @@ section{
          
         }
         .bakedgood{
-            @extend .btn-primary;
+            // @extend .btn-primary;
             width: 100%;
             box-shadow: 5px 5px 10px #888888;
            
@@ -446,14 +446,20 @@ footer{
     section #main-outer{
         height: 68vh;
     }
+    .bakedgoods .btn, .bakedgoods .btn-primary{
+            width: 40%;
+    }
 }
 
 
-@media all and (min-width: 320x) and (max-width: 414px){
+@media all and (min-width: 320px) and (max-width: 414px){
     section #main-outer{
         height: 66vh;
         #main-inner #feature-bottom #table-bottom{
             font-size: 1.5vh;
         }
+    }
+    .bakedgoods .btn, .bakedgoods .btn-primary{
+        width: 100%;
     }
 }
