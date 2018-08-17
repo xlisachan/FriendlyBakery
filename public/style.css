@@ -430,24 +430,13 @@ footer {
       width: 20%;
       height: auto; }
 
-@media all and (min-width: 769px) and (max-width: 1025px) {
-  section #main-outer {
-    height: 1000px; }
-    section #main-outer #main-inner {
-      position: relative;
-      top: 350px; }
-      section #main-outer #main-inner #floor {
-        height: 350px; }
-
-  .bakedgoods .bakedgood {
-    width: 40%; } }
 @media all and (min-width: 415px) and (max-width: 768px) {
   section #main-outer {
     height: 68vh; } }
-@media all and (min-width: 320x) and (max-width: 414px) {
-  section #main-outer {
-    height: 66vh; }
-    section #main-outer #main-inner #feature-bottom #table-bottom {
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  body section #main-outer {
+    height: 75vh; }
+    body section #main-outer #main-inner #feature-bottom #table-bottom {
       font-size: 1.5vh; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -441,23 +441,6 @@ footer{
         }
     }
 }
-//Media Query - iPad Pro
-@media all and (min-width: 769px) and (max-width: 1025px){
-    section #main-outer{
-        height: 1000px;
-        #main-inner{
-            position: relative;
-            top: 350px;
-            #floor{
-                height: 350px;
-            }
-        }
-    }
-    .bakedgoods .bakedgood{
-        width: 40%;
-    }
-}
-
 
 @media all and (min-width: 415px) and (max-width: 768px){
     section #main-outer{
@@ -465,13 +448,22 @@ footer{
     }
 }
 
-
-@media all and (min-width: 320x) and (max-width: 414px){
-    section #main-outer{
-        height: 66vh;
-        #main-inner #feature-bottom #table-bottom{
-            font-size: 1.5vh;
+@media screen and (min-width: 320px) and (max-width: 414px){
+    body{
+        section {
+            #main-outer{
+                height: 75vh;
+                #main-inner {
+                    #feature-bottom {
+                        #table-bottom{
+                            font-size: 1.5vh;
+                        }
+                    }
+                }
+            }
         }
     }
 } 
+
+
 
