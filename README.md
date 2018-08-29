@@ -1,5 +1,7 @@
 # Friendly Bakery - Mad Batter Bakery
-Demonstrate an understanding of how to use the Sinatra microframework to create a fullstack website for a bakery that displays information on cookies, cakes, and muffins offered for sale.
+* Built a fullstack website for a bakery that displays information on cookies, cakes, and muffins offered for sale
+* Demonstrated an understanding of how to use the Sinatra microframework
+* Created an adaptive web experience with responsive design for optimal viewing across a wide range of devices (desktop, tablet, and mobile)
 
 # Deployment
 <a href="https://madhatterbakery.herokuapp.com/">https://madhatterbakery.herokuapp.com/
