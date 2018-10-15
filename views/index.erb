@@ -13,40 +13,39 @@
 </head>
 <body>
     <header>
-        <div id="header-middle" class="header">
-            <a href="/"><div id="logo" style="color: black">Mad Batter<br/>Bakery</div></a>
+        <div class="header-top flex-col">
+            <a href="/"><div class="logo flex-col">Mad Batter<br/>Bakery</div></a>
         </div>
-        <div id="navigation-bar">
-            <a href="/cookies"><div class="tab" id="cookies">COOKIES</div></a>
-            <a href="/cakes"><div class="tab" id="cakes">CAKES</div></a>
-            <a href="/muffins"><div class="tab" id="muffins">MUFFINS</div></a>
+        <div class="navigation-bar">
+            <a href="/cookies"><div class="tab flex-row" id="cookies">cookies</div></a>
+            <a href="/cakes"><div class="tab flex-row" id="cakes">cakes</div></a>
+            <a href="/muffins"><div class="tab flex-row" id="muffins">muffins</div></a>
         </div>
     </header>
-    <section id="main">      
-        <div id="main-outer" class="main" style="background-color:mistyrose">
-            <div id="main-inner" class="main">
-                
-                <div id="feature-top">
+    <section class="flex-col">      
+        <div class="main-outer" class="main" style="background-color:mistyrose">
+            <div class="main-inner" class="main">
+                <div class="feature-top">
                    <a href="/cookies">
-                        <div id="cookie-draw">
-                            <div class="cookie-row2">
+                        <div class="cookie-draw flex-col">
+                            <div class="baked-row2 flex-row">
                                 <div class="cookie" id="cookie1"></div>
                             </div>
-                            <div class="cookie-row1">
+                            <div class="baked-row1 flex-row">
                                 <div class="cookie" id="cookie2"></div>
                                 <div class="cookie" id="cookie1"></div>
                             </div>
-                            <div class="cookie-row">
+                            <div class="baked-row flex-row">
                                 <div class="cookie" id="cookie1"></div>
                                 <div class="cookie" id="cookie3"></div>
                                 <div class="cookie" id="cookie3"></div>
                             </div>
-                            <div class="tin-row"></div>
+                            <div class="tin-row" id="tin1"></div>
                         </div>
                      </a>
                      <a href="/cakes">
-                        <div id="cake-draw">
-                            <div class="cake-top">
+                        <div class="cake-draw flex-col">
+                            <div class="cake-top flex-row">
                                 <div class="cherries"></div>
                                 <div class="cherries"></div>
                                 <div class="cherries"></div>
@@ -63,42 +62,42 @@
                         </div>
                     </a>
                     <a href="/muffins">
-                        <div id="muffin-draw">
-                            <div class="muffin-row3">
-                                <div class="muffin">
+                        <div class="muffin-draw flex-col">
+                            <div class="baked-row2 flex-row">
+                                <div class="muffin flex-col">
                                     <div class="muffintop" id="cookie1"></div>
                                     <div class="muffinbot" id="muffinbot3"></div>
                                 </div>
                             </div>
-                            <div class="muffin-row2">
-                                <div class="muffin">
+                            <div class="baked-row1 flex-row">
+                                <div class="muffin flex-col">
                                     <div class="muffintop" id="cookie4"></div>
                                     <div class="muffinbot" id="muffinbot3"></div>
                                 </div>
-                                <div class="muffin">
+                                <div class="muffin flex-col">
                                     <div class="muffintop" id="cookie5"></div>
-                                    <div class="muffinbot"></div>
+                                    <div class="muffinbot" id="muffinbot1"></div>
                                 </div>
                             </div>
-                            <div class="muffin-row">
-                                <div class="muffin">
+                            <div class="baked-row flex-row">
+                                <div class="muffin flex-col">
                                     <div class="muffintop" id="cookie1"></div>
                                     <div class="muffinbot" id="muffinbot3"></div>
                                 </div>
-                                <div class="muffin">
-                                    <div class="muffintop" id-="cookie6"></div>
+                                <div class="muffin flex-col">
+                                    <div class="muffintop" id="cookie3"></div>
                                     <div class="muffinbot" id="muffinbot2"></div>
                                 </div>
-                                <div class="muffin">
+                                <div class="muffin flex-col">
                                     <div class="muffintop" id="cookie4"></div>
                                     <div class="muffinbot" id="muffinbot1"></div>
                                 </div>
                             </div>
-                            <div class="tin-row"></div>
+                            <div class="tin-row" id="tin2"></div>
                         </div>
                     </a>
-                    <div id="register-draw">
-                        <div id="register-pad">
+                    <div class="register-draw flex-col">
+                        <div class="register-pad flex-col">
                             <div id="register-stand"></div>
                         </div>
                         <div id="register-base"></div>
@@ -132,15 +131,13 @@
             </div>
         </div>
     </section>
-    <footer>
-    <div id="social">
-        <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
-    </div>
-        <div id="copyright">
-            XLISACHAN ©2018 
+    <footer class="flex-col">
+        <div class="social">
+            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
         </div>
+        XLISACHAN ©2018 
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

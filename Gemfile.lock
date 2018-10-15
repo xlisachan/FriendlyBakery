@@ -17,10 +17,11 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   httparty
   sinatra
 
 BUNDLED WITH
-   1.16.3
+   1.17.0.pre.1
