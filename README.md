@@ -1,7 +1,11 @@
+# Friendly Bakery - Mad Batter Bakery
+* Built a fullstack website for a bakery that displays information on cookies, cakes, and muffins offered for sale
+* Demonstrated an understanding of how to use the Sinatra microframework
+* Created an adaptive web experience with responsive design for optimal viewing across a wide range of devices (desktop, tablet, and mobile)
 
-
-# <a href="https://madhatterbakery.herokuapp.com/">Friendly Bakery - Mad Batter Bakery</a>
-Demonstrate understanding of how to use the Sinatra microframework to create a fullstack website for a bakery that displays information on cookies, cakes, and muffins offered for sale.
+# Deployment
+<a href="https://madhatterbakery.herokuapp.com/">https://madhatterbakery.herokuapp.com/
+<img src="https://raw.githubusercontent.com/xlisachan/FriendlyBakery/master/public/images/Screen%20Shot%20of%20front%20page.png"/></a>
 
 # Requirements
 * Look and feel like a bakery website
@@ -9,11 +13,9 @@ Demonstrate understanding of how to use the Sinatra microframework to create a f
 * A page for each subcategory (cookies, cakes, and muffins)
 
 # Built With
-* HTML
-* Sass
 * Ruby
 * Sinatra
+* HTML
+* Sass
 * VSCode
 * Koala
-
-<img src="https://raw.githubusercontent.com/xlisachan/FriendlyBakery/master/public/images/Screen%20Shot%20of%20front%20page.png"/>
