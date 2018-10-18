@@ -1,6 +1,13 @@
-@mixin flexbox($display, $direction, $align, $justify){
+@mixin flexbox($display, $direction, $align, $justify, $width){
     display: $display;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
+    width: $width;
+}
+
+@mixin whbgc($width, $height, $bg-color){
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
 }

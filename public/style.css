@@ -44,6 +44,7 @@ body a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .flex-row {
@@ -60,33 +61,38 @@ body a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 header {
   width: 100%;
 }
 
-header .header-top {
+.header-top {
   height: 13vh;
   background: repeating-linear-gradient(to right, #7D3828, #7D3828 40px, #9D432E 40px, #9D432E 90px);
 }
 
-header .header-top .logo {
+.logo {
   width: 30vw;
   height: 10vh;
+  background-color: beige;
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   letter-spacing: 1px;
   line-height: 0.9;
-  background-color: beige;
   border: 5px dotted black;
   border-radius: 50%;
   color: black;
 }
 
-header .navigation-bar {
+.navigation-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,11 +110,11 @@ header .navigation-bar {
   margin-bottom: 5vh;
 }
 
-header .navigation-bar a {
+.navigation-bar a {
   width: 100%;
 }
 
-header .navigation-bar .tab {
+.tab {
   background: repeating-linear-gradient(to right, #7D3828, #7D3828 40px, #9D432E 40px, #9D432E 90px);
   width: 100%;
   height: 7vh;
@@ -119,12 +125,7 @@ header .navigation-bar .tab {
   border-radius: 10px 10px 100px 100px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
-  text-transform: uppercase;
   color: white;
-}
-
-section {
-  width: 100%;
 }
 
 .main-outer {
@@ -196,24 +197,7 @@ section {
 }
 
 .cookie-draw {
-  width: 100%;
   margin: 2px;
-}
-
-.cake-draw {
-  width: 100%;
-}
-
-.muffin {
-  width: 100%;
-}
-
-.cake-top {
-  width: 100%;
-}
-
-.baked-row {
-  width: 100%;
 }
 
 .baked-row1 {
@@ -231,49 +215,34 @@ section {
   border-radius: 10px 10px 0px 0px;
 }
 
-#cookie1 {
-  background-color: #695130;
-}
-
-#cookie2 {
-  background-color: #F2B600;
-}
-
-#cookie3 {
-  background-color: #ecce1f;
-}
-
-#cookie4 {
-  background-color: pink;
-}
-
-#cookie5 {
-  background-color: white;
-}
-
-#cookie6 {
-  background-color: turquoise;
+.muffintop {
+  margin: 1px;
+  width: 80%;
+  height: 1.5vh;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .cherries {
-  width: 2vw;
+  width: 1.5vh;
   height: 1.5vh;
   border-radius: 50%;
   background-color: crimson;
 }
 
-.cake-layer1, .cake-layer2 {
-  margin: 0px 2px;
+.frosting {
   width: 90%;
   height: 1vh;
   background-color: beige;
+  margin: 0px 2px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
 }
 
-.cake-layer2 {
+.cake-layer {
+  width: 90%;
   height: 2vh;
   background-color: #79391b;
+  margin: 0px 2px;
   border-radius: 0px 0px 5px 5px;
 }
 
@@ -289,98 +258,73 @@ section {
   height: 0;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-}
-
-#muffinbot1 {
-  border-top: 10px solid turquoise;
-}
-
-#muffinbot2 {
-  border-top: 10px solid rebeccapurple;
-}
-
-#muffinbot3 {
-  border-top: 10px solid fuchsia;
+  border-top: 10px solid;
 }
 
 .pedestal {
   width: 8%;
   height: 4vh;
-  margin: -2px;
   background-color: turquoise;
+  margin: -2px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
 }
 
-.tin-row, .tin-row1 {
-  width: 100%;
-  height: 1vh;
-  border-radius: 0px 0px 10px 10px;
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
-}
-
-.tin-row, .tin-row1 {
+.tin-row, .tin-row1, .tin-row2 {
   margin: 2px 2px;
   width: 90%;
   height: 1vh;
-  background-color: turquoise;
-  border-radius: 0px 0px 10px 10px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
 }
 
 .tin-row1 {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.tin-row2 {
   border-radius: 10px 10px 0px 0px;
-}
-
-#tin1 {
-  background-color: rebeccapurple;
-}
-
-#tin2 {
-  background-color: #00B950;
 }
 
 .register-draw {
   width: 20%;
 }
 
-.register-draw .register-pad {
-  position: relative;
-  top: -20px;
+.register-pad {
   width: 100%;
   height: 10vh;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
+  position: relative;
+  top: -20px;
   z-index: 0;
 }
 
-.register-draw .register-pad #register-stand {
+.register-stand {
   width: 10%;
   height: 9vh;
-  position: relative;
-  top: 30px;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   -webkit-box-shadow: 5px 3px 10px #888888;
           box-shadow: 5px 3px 10px #888888;
+  position: relative;
+  top: 30px;
   z-index: 2;
 }
 
-.register-draw #register-base {
-  margin-bottom: 3px;
+.register-base {
   width: 90%;
   height: 1vh;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
+  margin-bottom: 3px;
 }
 
-#feature-bottom {
+.feature-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,7 +343,7 @@ section {
   top: 80px;
 }
 
-#feature-bottom #table-top {
+.table-top {
   border-radius: 2px;
   background-color: #7D3828;
   -webkit-box-shadow: 5px 10px 18px #888888;
@@ -408,7 +352,7 @@ section {
   height: 2vh;
 }
 
-#feature-bottom #table-bottom {
+.table-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +377,7 @@ section {
   z-index: 1;
 }
 
-#floor {
+.floor {
   width: 100%;
   height: 19vh;
   background-color: #eee;
@@ -441,6 +385,19 @@ section {
   background-size: 60px 60px;
   background-position: 0px 0px, 30px 30px;
   z-index: 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: gray;
+  letter-spacing: 1.5px;
+}
+
+footer a {
+  color: gray;
 }
 
 .bakedgoods {
@@ -462,31 +419,11 @@ section {
       flex-flow: row wrap;
 }
 
-.bakedgoods .modal-header {
-  text-transform: uppercase;
-}
-
-.bakedgoods .modal-header .modal-title {
+.modal-title {
   white-space: nowrap;
 }
 
-.bakedgoods .modal-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.bakedgoods .btn, .bakedgoods .btn-primary {
+.btn, .btn-primary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,50 +436,78 @@ section {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 30%;
   margin: 10px 5px;
   padding: 10px;
   background-color: white;
   border-color: white;
   color: black;
   font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
   text-align: center;
-  width: 30%;
 }
 
-.bakedgoods .btn :hover, .bakedgoods .btn-primary :hover {
+.btn :hover, .btn-primary :hover {
   background-color: beige;
 }
 
-.bakedgoods .btn .bakedgood, .bakedgoods .btn-primary .bakedgood {
+.bakedgood {
   width: 100%;
-  -webkit-box-shadow: 5px 5px 10px #888888;
-          box-shadow: 5px 5px 10px #888888;
 }
 
-.bakedgoods .btn .bakedgood .bakedgood-image, .bakedgoods .btn-primary .bakedgood .bakedgood-image {
+.bakedgood-image {
   text-align: center;
 }
 
-.bakedgoods .btn .bakedgood .bakedgood-image .bakedgood-img, .bakedgoods .btn-primary .bakedgood .bakedgood-image .bakedgood-img {
+.bakedgood-img {
   width: 90%;
   height: auto;
 }
 
-.bakedgoods .btn .bakedgood .bakedgood-name, .bakedgoods .btn .bakedgood .bakedgood-price, .bakedgoods .btn-primary .bakedgood .bakedgood-name, .bakedgoods .btn-primary .bakedgood .bakedgood-price {
-  text-transform: uppercase;
+#flavor1 {
+  background-color: #695130;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: gray;
-  letter-spacing: 1.5px;
+#flavor2 {
+  background-color: #F2B600;
 }
 
-footer a {
-  color: gray;
+#flavor3 {
+  background-color: #ecce1f;
+}
+
+#flavor4 {
+  background-color: pink;
+}
+
+#flavor5 {
+  background-color: white;
+}
+
+#tin {
+  background-color: rebeccapurple;
+}
+
+#tin1 {
+  background-color: turquoise;
+}
+
+#tin2 {
+  background-color: #00B950;
+}
+
+#wrapper1 {
+  color: turquoise;
+}
+
+#wrapper2 {
+  color: rebeccapurple;
+}
+
+#wrapper3 {
+  color: fuchsia;
+}
+
+#turquoise {
+  color: turquoise;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,11 +2,11 @@
 <div class="bakedgoods">
     <% @muffins.each_with_index do |muffin, idx|%>
         <!-- Button trigger modal -->
-        <button type="button" class="bakedgood btn btn-primary" data-toggle="modal" data-target="#bakedgood<%= idx %>">
+        <button type="button" class="btn btn-primary uppercase" data-toggle="modal" data-target="#bakedgood<%= idx %>">
             <div class="bakedgood">
                 <div class="bakedgood-image"><img class="bakedgood-img" src="<%= muffin.image %>"></div>
-                <div class="bakedgood-name"><b><%= muffin.name %></b></div>
-                <div class="bakedgood-price">Price: $<%= muffin.price %></div>
+                <div class="uppercase"><b><%= muffin.name %></b></div>
+                <div class="uppercase">Price: $<%= muffin.price %></div>
             </div>
         </button>
 
@@ -14,13 +14,13 @@
         <div class="modal fade" id="bakedgood<%= idx %>" tabindex="-1" role="dialog" aria-labelledby="bakedgood<%= idx %>Label" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header uppercase">
                         <h5 class="modal-title" id="bakedgood<%= idx %>Label"><b><%= muffin.name %></b></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="bakedgood modal-body">
+                    <div class="bakedgood modal-body flex-col">
                         <img class="bakedgood-img" src="<%= muffin.image %>">
                         <br/>
                         <%= muffin.description %>
@@ -29,7 +29,7 @@
                         Price: $<%= muffin.price %>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary uppercase" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
