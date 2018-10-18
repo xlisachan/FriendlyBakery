@@ -1,4 +1,4 @@
-# Friendly Bakery - Mad Batter Bakery
+# Mad Batter Bakery
 * Built a fullstack website for a bakery that displays information on cookies, cakes, and muffins offered for sale
 * Demonstrated an understanding of how to use the Sinatra microframework
 * Created an adaptive web experience with responsive design for optimal viewing across a wide range of devices (desktop, tablet, and mobile)
