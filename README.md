@@ -4,7 +4,7 @@
 * Created an adaptive web experience with responsive design for optimal viewing across a wide range of devices (desktop, tablet, and mobile)
 
 # Deployment
-<a href="https://madhatterbakery.herokuapp.com/">https://madhatterbakery.herokuapp.com/
+<a href="https://madbatterbakery.herokuapp.com/">https://madbatterbakery.herokuapp.com/
 <img src="https://raw.githubusercontent.com/xlisachan/FriendlyBakery/master/public/images/Screen%20Shot%20of%20front%20page.png"/></a>
 
 # Requirements
