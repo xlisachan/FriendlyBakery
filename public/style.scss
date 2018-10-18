@@ -280,6 +280,7 @@ footer{
     flex-flow: row wrap;
 }
 
+
 .modal-title{
     white-space: nowrap;
 }
@@ -295,8 +296,8 @@ footer{
     text-align: center;
 
     & :hover {
-        background-color: beige;
-        
+        background-color: white;
+        color: black;
     }
 }
 
@@ -362,30 +363,32 @@ footer{
     color: turquoise;
 }
 
-// @media (min-width: break(415px)){
-//     .btn, .btn-primary{
-//             width: 40%;
-//     }
-// }
+@media (max-width: 768px){
+    .logo{
+        font-size: 2em;
+    }
 
-// @media (min-width: break(320px)){
-//     .main-outer{
-//         height: 66vh;
-//     }
+    .btn, .btn-primary{
+        @include flexbox(flex, column, center, space-around, 40%);
+    }
+}
 
-//     .table-bottom{
-//         font-size: 1.5vh;
-//     }
+@media (max-width: 375px){
+    .logo{
+        font-size: 1em;
+    }
+   
+    .table-bottom{
+        font-size: 0.7em;
+    }
 
-//     .btn, .btn-primary{
-//     width: 100%;
-//     }
+    .btn, .btn-primary{
+    width: 100%;
+    }
 
-//     footer{
-//         .social{
-//             a {
-//                 font-size: 1.25em;   
-//             }
-//         }
-//     }
-// }
+    footer{
+        span{
+            font-size: 0.7em;   
+        }
+    }
+}
