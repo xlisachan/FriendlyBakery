@@ -464,52 +464,48 @@ footer a {
   height: auto;
 }
 
-#flavor1 {
-  background-color: #695130;
+.maroon {
+  background-color: maroon;
 }
 
-#flavor2 {
-  background-color: #F2B600;
+.peru {
+  background-color: peru;
 }
 
-#flavor3 {
-  background-color: #ecce1f;
+.gold {
+  background-color: gold;
 }
 
-#flavor4 {
+.pink {
   background-color: pink;
 }
 
-#flavor5 {
+.white {
   background-color: white;
 }
 
-#tin {
+.rebeccapurple {
   background-color: rebeccapurple;
 }
 
-#tin1 {
+.turquoise {
   background-color: turquoise;
 }
 
-#tin2 {
-  background-color: #00B950;
+.limegreen {
+  background-color: limegreen;
 }
 
-#wrapper1 {
-  color: turquoise;
+.cornflowerblue {
+  color: cornflowerblue;
 }
 
-#wrapper2 {
+.rebeccapurple {
   color: rebeccapurple;
 }
 
-#wrapper3 {
+.fuchsia {
   color: fuchsia;
-}
-
-#turquoise {
-  color: turquoise;
 }
 
 @media (max-width: 768px) {
