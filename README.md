@@ -18,5 +18,3 @@
 * HTML
 * Sass
 * VSCode
-* Koala
->>>>>>> 2f3dc2df71d98803cb9a180058f2078b81a46979
