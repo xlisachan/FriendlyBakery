@@ -2,20 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 100%;
   font-family: "Lato", sans-serif;
 }
 
@@ -61,7 +47,6 @@ body a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 
 .uppercase {
@@ -82,8 +67,9 @@ header {
   height: 10vh;
   background-color: beige;
   font-family: "Love Ya Like A Sister", cursive;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
+  max-width: 250px;
   text-align: center;
   letter-spacing: 1px;
   line-height: 0.9;
@@ -93,20 +79,9 @@ header {
 }
 
 .navigation-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100%;
   margin-bottom: 5vh;
 }
 
@@ -129,20 +104,12 @@ header {
 }
 
 .main-outer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 90%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 90%;
+  max-width: 1000px;
+  min-width: 300px;
   height: 66vh;
   margin-top: 1vh;
   border-radius: 10px 10px 10px 10px;
@@ -152,20 +119,10 @@ header {
 }
 
 .main-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100%;
 }
 
 .feature-top {
@@ -179,10 +136,10 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
   position: relative;
   top: 80px;
 }
@@ -210,15 +167,8 @@ header {
 
 .cookie {
   width: 100%;
-  margin: 1px;
   height: 1.3vh;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.muffintop {
   margin: 1px;
-  width: 80%;
-  height: 1.5vh;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -247,9 +197,9 @@ header {
 }
 
 .muffintop {
-  margin: 1px;
   width: 80%;
   height: 1.5vh;
+  margin: 1px;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -271,9 +221,9 @@ header {
 }
 
 .tin-row, .tin-row1, .tin-row2 {
-  margin: 2px 2px;
   width: 90%;
   height: 1vh;
+  margin: 2px 2px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
 }
@@ -325,20 +275,10 @@ header {
 }
 
 .feature-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 100%;
   position: relative;
   top: 80px;
 }
@@ -372,7 +312,7 @@ header {
   border-radius: 5px;
   background-color: #83663D;
   color: white;
-  font-size: 2vh;
+  font-size: 0.7em;
   text-align: center;
   z-index: 1;
 }
@@ -414,9 +354,9 @@ footer a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100%;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+  width: 100%;
 }
 
 .modal-title {
@@ -424,19 +364,9 @@ footer a {
 }
 
 .btn, .btn-primary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 30%;
+  width: 100%;
   margin: 10px 5px;
   padding: 10px;
   background-color: white;
@@ -508,39 +438,21 @@ footer a {
   color: fuchsia;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .logo {
     font-size: 2em;
   }
+  .table-bottom {
+    font-size: 1em;
+  }
   .btn, .btn-primary {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     width: 40%;
   }
 }
 
-@media (max-width: 375px) {
-  .logo {
-    font-size: 1em;
-  }
-  .table-bottom {
-    font-size: 0.7em;
-  }
+@media (min-width: 1024px) {
   .btn, .btn-primary {
-    width: 100%;
-  }
-  footer span {
-    font-size: 0.7em;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

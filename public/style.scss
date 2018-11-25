@@ -4,7 +4,6 @@
 @import './partials/variables';
 
 body{
-    @include flexbox(flex, column, center, flex-start, 100%);
     font-family: $content;
 
     a, a:active, a:link, a:visited{
@@ -20,11 +19,14 @@ body{
 }
 
 .flex-col{
-    @include flexbox(flex, column, center, center, 100%);
+    @include flexbox(flex, column, center);
+    justify-content: center;
+    width: 100%;
 }
 
 .flex-row{
-    @include flexbox(flex, row, center, center, 100%);
+    @include flexbox(flex, row, center);
+    justify-content: center;
 }
 
 .uppercase{
@@ -50,9 +52,10 @@ header{
     @include whbgc(30vw, 10vh, beige);
     font : {
         family: $logo;
-        size: 1.5em;
+        size: 1em;
         weight: bold;
     }
+    max-width: 250px;
     text-align: center;
     letter-spacing: 1px;
     line-height: 0.9;
@@ -62,7 +65,7 @@ header{
 }
 
 .navigation-bar{
-    @include flexbox(flex, row, center, space-evenly, 100%);
+    justify-content: space-evenly;
     margin-bottom: 5vh;
     a {
         width: 100%;
@@ -89,7 +92,10 @@ header{
 }
 
 .main-outer{
-    @include flexbox(flex, column, center, flex-start, 90%);
+    width: 90%;
+    justify-content: flex-start;
+    max-width: 1000px;
+    min-width: 300px;
     height: 66vh;
     margin-top: 1vh;
     border-radius: $register-border-radius;
@@ -98,12 +104,15 @@ header{
 }
 
 .main-inner{
-    @include flexbox(flex, column, center, flex-end, 100%);
+    width: 100%;
+    justify-content: flex-end;
 }
 
 //index
 .feature-top{
-    @include flexbox(flex, row, flex-end, center, 90%);
+    @include flexbox(flex, row, flex-end);
+    width: 90%;
+    justify-content: center;
     position: relative;
     top: 80px;
     a, a:active, a:link, a:visited{
@@ -130,15 +139,8 @@ header{
 
 .cookie{
     width: 100%;
-    margin: 1px;
     height: 1.3vh;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.muffintop{
     margin: 1px;
-    width: 80%;
-    height: 1.5vh;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -162,9 +164,9 @@ header{
 }
 
 .muffintop{
-    margin: 1px;
     width: 80%;
     height: 1.5vh;
+    margin: 1px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -185,9 +187,9 @@ header{
 }
 
 .tin-row{
-    margin: 2px 2px;
     width: 90%;
     height: 1vh;
+    margin: 2px 2px;
     box-shadow: 5px 10px 18px #888888;
 }
 
@@ -230,7 +232,8 @@ header{
 }
 
 .feature-bottom{
-    @include flexbox(flex, column, center, flex-start, 100%);
+    width: 100%;
+    justify-content: flex-start;
     position: relative;
     top: 80px;
 }
@@ -244,14 +247,16 @@ header{
 }
 
 .table-bottom{
-    @include flexbox(flex, row, flex-start, space-around, 80%);
+    @include flexbox(flex, row, flex-start);
+    justify-content: space-around;
+    width: 80%;
     height: 30vh;
     margin: 2px 0px 20px 0px;
     padding: 6px 5px 5px 5px;
     border-radius: 5px;
     background-color: #83663D;
     color: white;
-    font-size: 2vh;
+    font-size: 0.7em;
     text-align: center;
     z-index: 1;
 }
@@ -282,17 +287,19 @@ footer{
 
 // feature pages
 .bakedgoods{
-    @include flexbox(flex, row, flex-start, space-evenly, 100%);
+    @include flexbox(flex, row, flex-start);
+    justify-content: space-evenly;
     flex-flow: row wrap;
+    width: 100%;
 }
-
 
 .modal-title{
     white-space: nowrap;
 }
 
 .btn, .btn-primary{
-    @include flexbox(flex, column, center, space-around, 30%);
+    justify-content: space-around;
+    width: 100%;
     margin: 10px 5px;
     padding: 10px;
     background-color: white;
@@ -321,7 +328,6 @@ footer{
 }
 
 // colors
-
 @each $bgcolor in $bglist{
     .#{$bgcolor}{
         background-color: $bgcolor;
@@ -334,32 +340,23 @@ footer{
     }
 }
 
-@media (max-width: 768px){
+//Media Queries - Tablet and Desktop
+@media (min-width: 768px){
     .logo{
         font-size: 2em;
     }
 
+    .table-bottom{
+        font-size: 1em;
+    }
+
     .btn, .btn-primary{
-        @include flexbox(flex, column, center, space-around, 40%);
+        width: 40%;
     }
 }
 
-@media (max-width: 375px){
-    .logo{
-        font-size: 1em;
-    }
-   
-    .table-bottom{
-        font-size: 0.7em;
-    }
-
+@media (min-width: 1024px){
     .btn, .btn-primary{
-    width: 100%;
-    }
-
-    footer{
-        span{
-            font-size: 0.7em;   
-        }
+        width: 30%;
     }
 }

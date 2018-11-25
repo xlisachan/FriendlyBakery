@@ -2,7 +2,7 @@
 <div class="bakedgoods">
     <% @cookies.each_with_index do |cookie, idx|%>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary uppercase" data-toggle="modal" data-target="#bakedgood<%= idx %>">
+        <button type="button" class="btn btn-primary flex-col uppercase" data-toggle="modal" data-target="#bakedgood<%= idx %>">
             <div class="bakedgood">
                 <div class="bakedgood-image"><img class="bakedgood-img" src="<%= cookie.image %>"></div>
                 <div class="uppercase"><b><%= cookie.name %></b></div>
@@ -29,7 +29,7 @@
                         Price: $<%= cookie.price %>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary uppercase" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary flex-col uppercase" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>

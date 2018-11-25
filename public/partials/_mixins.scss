@@ -1,9 +1,7 @@
-@mixin flexbox($display, $direction, $align, $justify, $width){
+@mixin flexbox($display, $direction, $align){
     display: $display;
     flex-direction: $direction;
     align-items: $align;
-    justify-content: $justify;
-    width: $width;
 }
 
 @mixin whbgc($width, $height, $bg-color){
