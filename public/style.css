@@ -5,13 +5,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-body a, body a:active, body a:link, body a:visited {
-  letter-spacing: 1.5px;
-  text-decoration: none;
-}
-
-body a:hover {
-  color: mistyrose;
+a, a:hover {
   letter-spacing: 1.5px;
   text-decoration: none;
 }
@@ -27,9 +21,6 @@ body a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
 }
 
@@ -44,21 +35,22 @@ body a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
-header {
+header, .navigation-bar a {
   width: 100%;
 }
 
 .header-top {
   height: 13vh;
+  min-height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: repeating-linear-gradient(to right, #7D3828, #7D3828 40px, #9D432E 40px, #9D432E 90px);
 }
 
@@ -67,62 +59,48 @@ header {
   height: 10vh;
   background-color: beige;
   font-family: "Love Ya Like A Sister", cursive;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 250px;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 0.9;
+  min-height: 80px;
   border: 5px dotted black;
   border-radius: 50%;
   color: black;
-}
-
-.navigation-bar {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 5vh;
-}
-
-.navigation-bar a {
-  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 0.9;
 }
 
 .tab {
   background: repeating-linear-gradient(to right, #7D3828, #7D3828 40px, #9D432E 40px, #9D432E 90px);
-  width: 100%;
-  height: 7vh;
   font-size: 1em;
   font-weight: bold;
-  text-align: center;
+  width: 100%;
+  height: 7vh;
+  min-height: 50px;
   border: 2px solid black;
   border-radius: 10px 10px 100px 100px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
   color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-outer {
   width: 90%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   max-width: 1000px;
   min-width: 300px;
   height: 66vh;
-  margin-top: 1vh;
+  margin: 5vh auto;
   border-radius: 10px 10px 10px 10px;
   overflow: scroll;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
-}
-
-.main-inner {
-  width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .feature-top {
@@ -136,40 +114,34 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 90%;
   position: relative;
   top: 80px;
 }
 
 .feature-top a, .feature-top a:active, .feature-top a:link, .feature-top a:visited {
-  width: 23%;
-}
-
-.muffin-draw {
-  width: 80%;
-  margin: 2px;
-}
-
-.cookie-draw {
-  margin: 2px;
+  width: 20%;
 }
 
 .baked-row1 {
-  width: 70%;
+  width: 30%;
 }
 
 .baked-row2 {
-  width: 35%;
+  width: 60%;
+}
+
+.pastry, .cookie, .muffintop {
+  margin: 1px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .cookie {
   width: 100%;
   height: 1.3vh;
-  margin: 1px;
-  border-radius: 10px 10px 0px 0px;
 }
 
 .cherries {
@@ -183,24 +155,18 @@ header {
   width: 90%;
   height: 1vh;
   background-color: beige;
-  margin: 0px 2px;
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
 }
 
 .cake-layer {
   width: 90%;
   height: 2vh;
   background-color: #79391b;
-  margin: 0px 2px;
   border-radius: 0px 0px 5px 5px;
 }
 
 .muffintop {
   width: 80%;
   height: 1.5vh;
-  margin: 1px;
-  border-radius: 10px 10px 0px 0px;
 }
 
 .muffinbot {
@@ -240,26 +206,24 @@ header {
   width: 20%;
 }
 
-.register-pad {
-  width: 100%;
-  height: 10vh;
-  background-color: white;
+.register, .register-pad, .register-stand, .register-base {
   border-radius: 10px 10px 10px 10px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
   position: relative;
+}
+
+.register-pad {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
   top: -20px;
-  z-index: 0;
 }
 
 .register-stand {
   width: 10%;
   height: 9vh;
   background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  -webkit-box-shadow: 5px 3px 10px #888888;
-          box-shadow: 5px 3px 10px #888888;
-  position: relative;
   top: 30px;
   z-index: 2;
 }
@@ -268,14 +232,10 @@ header {
   width: 90%;
   height: 1vh;
   background-color: white;
-  border-radius: 10px 10px 10px 10px;
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
-  margin-bottom: 3px;
+  margin: 2px;
 }
 
 .feature-bottom {
-  width: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -284,12 +244,12 @@ header {
 }
 
 .table-top {
-  border-radius: 2px;
-  background-color: #7D3828;
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
   width: 80%;
   height: 2vh;
+  background-color: #7D3828;
+  border-radius: 2px;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
 }
 
 .table-bottom {
@@ -303,28 +263,26 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 80%;
   height: 30vh;
-  margin: 2px 0px 20px 0px;
-  padding: 6px 5px 5px 5px;
-  border-radius: 5px;
   background-color: #83663D;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2px 0px;
+  padding: 6px 5px;
+  border-radius: 5px;
   color: white;
   font-size: 0.7em;
   text-align: center;
-  z-index: 1;
 }
 
 .floor {
   width: 100%;
-  height: 19vh;
+  height: 21vh;
   background-color: #eee;
   background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
   background-size: 60px 60px;
   background-position: 0px 0px, 30px 30px;
-  z-index: 0;
 }
 
 footer {
@@ -332,8 +290,6 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: gray;
-  letter-spacing: 1.5px;
 }
 
 footer a {
@@ -356,7 +312,6 @@ footer a {
           justify-content: space-evenly;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  width: 100%;
 }
 
 .modal-title {
@@ -364,29 +319,18 @@ footer a {
 }
 
 .btn, .btn-primary {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
   margin: 10px 5px;
-  padding: 10px;
-  background-color: white;
-  border-color: white;
+  background-color: transparent;
+  border-color: transparent;
   color: black;
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
-.btn :hover, .btn-primary :hover {
-  background-color: white;
+.btn:hover, .btn-primary:hover {
+  background-color: transparent;
+  border: 0px transparent;
   color: black;
-}
-
-.bakedgood {
-  width: 100%;
-}
-
-.bakedgood-image {
-  text-align: center;
 }
 
 .bakedgood-img {

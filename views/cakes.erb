@@ -3,8 +3,8 @@
     <% @cakes.each_with_index do |cake, idx|%>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary uppercase flex-col" data-toggle="modal" data-target="#bakedgood<%= idx %>">
-            <div class="bakedgood">
-                <div class="bakedgood-image"><img class="bakedgood-img" src="<%= cake.image %>"></div>
+            <div>
+                <div><img class="bakedgood-img" src="<%= cake.image %>"></div>
                 <div class="uppercase"><b><%= cake.name %></b></div>
                 <div class="uppercase">Price: $<%= cake.price %></div>
             </div>
@@ -20,7 +20,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="bakedgood modal-body flex-col">
+                    <div class="modal-body flex-col">
                         <img class="bakedgood-img" src="<%= cake.image %>">
                         <br/>
                         <%= cake.description %>

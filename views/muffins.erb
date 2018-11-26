@@ -3,8 +3,8 @@
     <% @muffins.each_with_index do |muffin, idx|%>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary uppercase" data-toggle="modal" data-target="#bakedgood<%= idx %>">
-            <div class="bakedgood">
-                <div class="bakedgood-image"><img class="bakedgood-img" src="<%= muffin.image %>"></div>
+            <div>
+                <div><img class="bakedgood-img" src="<%= muffin.image %>"></div>
                 <div class="uppercase"><b><%= muffin.name %></b></div>
                 <div class="uppercase">Price: $<%= muffin.price %></div>
             </div>
@@ -20,7 +20,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="bakedgood modal-body flex-col">
+                    <div class="modal-body flex-col">
                         <img class="bakedgood-img" src="<%= muffin.image %>">
                         <br/>
                         <%= muffin.description %>
