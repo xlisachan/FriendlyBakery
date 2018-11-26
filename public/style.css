@@ -145,8 +145,8 @@ header, .navigation-bar a {
 }
 
 .top-cookie {
-  -webkit-animation: shake 4s infinite;
-          animation: shake 4s infinite;
+  -webkit-animation: shake 3s infinite;
+          animation: shake 3s infinite;
 }
 
 .cherries {
