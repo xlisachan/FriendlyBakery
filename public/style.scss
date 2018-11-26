@@ -5,6 +5,7 @@
 
 body{
     font-family: $content;
+    font-size: 16px;
 }
 
 a, a:hover {
@@ -89,7 +90,7 @@ header, .navigation-bar a {
     max-width: 1000px;
     min-width: 300px;
     height: 66vh;
-    margin: 5vh auto;
+    margin: 3vh auto;
     border-radius: $register-border-radius;
     overflow: auto;
     box-shadow: 5px 10px 18px #888888;
