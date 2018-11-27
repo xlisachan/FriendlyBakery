@@ -1,7 +1,7 @@
 # <a href="https://madbatterbakery.herokuapp.com">Mad Batter Bakery</a>
 * Built a full stack website for a fictitious bakery that displays information on assorted goods for sale
 * Demonstrated an understanding of how to create a site using the Sinatra microframework
-* Constructed a universal template for scalable content by utilizing flexbox and Bootstrap modals
+* Utilized flexbox and Bootstrap modals to help construct a universal template for scalable content 
 * Created an adaptive experience with responsive design for optimal viewing across a wide range of devices (desktop, tablet, and mobile)
 
 # Deployment
