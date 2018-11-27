@@ -4,12 +4,11 @@
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary flex-col uppercase" data-toggle="modal" data-target="#bakedgood<%= idx %>">
             <div>
-                <div><img class="bakedgood-img" src="<%= cookie.image %>"></div>
+                <img class="bakedgood-img" src="<%= cookie.image %>">
                 <div class="uppercase"><b><%= cookie.name %></b></div>
                 <div class="uppercase">Price: $<%= cookie.price %></div>
             </div>
         </button>
-
         <!-- Modal -->
         <div class="modal fade" id="bakedgood<%= idx %>" tabindex="-1" role="dialog" aria-labelledby="bakedgood<%= idx %>Label" aria-hidden="true">
             <div class="modal-dialog" role="document">
