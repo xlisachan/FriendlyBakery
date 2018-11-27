@@ -1,0 +1,38 @@
+<link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+<div class="bakedgoods">
+    <% @items.each_with_index do |item, idx|%>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary flex-col uppercase" data-toggle="modal" data-target="#bakedgood<%= idx %>">
+            <div>
+                <img class="bakedgood-img" src="<%= item.image %>">
+                <div class="uppercase"><b><%= item.name %></b></div>
+                <div class="uppercase">Price: $<%= item.price %></div>
+            </div>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="bakedgood<%= idx %>" tabindex="-1" role="dialog" aria-labelledby="bakedgood<%= idx %>Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header uppercase">
+                        <h5 class="modal-title" id="bakedgood<%= idx %>Label"><b><%= item.name %></b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body flex-col">
+                        <img class="bakedgood-img" src="<%= item.image %>">
+                        <br/>
+                        <%= item.description %>
+                        <br/>
+                        <br/>
+                        Price: $<%= item.price %>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary flex-col uppercase" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    <%end%>
+</div>
+

@@ -4,7 +4,6 @@ require './cakes.rb'
 require './cookies.rb'
 require './muffins.rb'
 
-
 get '/' do
     erb :index, :layout => false
 end
@@ -19,8 +18,8 @@ get '/cakes' do
     cake_toystory = Cake.new('toy story', 'Brown butter cake, apple compote, brown butter cheesecake, pie crumbs, pie dough frosting', 100, '/images/caketoystory.png')
     cake_pooh = Cake.new('winnie the pooh (1-tier)', 'Salted pretzel cake, chocolate stout ganache, pretzel crumbs, burnt honey frosting', 50, '/images/cakepooh.png')
     cake_pooh2 = Cake.new('winnie the pooh (2-tier)', 'Salted pretzel cake, chocolate stout ganache, pretzel crumbs, burnt honey frosting', 100, '/images/cakepooh2.png')
-    @cakes = [cake_cinderella, cake_disney, cake_disney2, cake_nemo, cake_mickey, cake_minnie, cake_toystory, cake_pooh, cake_pooh2]
-    erb :cakes
+    @items = [cake_cinderella, cake_disney, cake_disney2, cake_nemo, cake_mickey, cake_minnie, cake_toystory, cake_pooh, cake_pooh2]
+    erb :results
 end
 
 get '/cookies' do
@@ -34,8 +33,8 @@ get '/cookies' do
     cookie_monsters = Cookie.new('monsters inc', 'Peanut Butter Cookies - Mike, Sully, Doors', 20, '/images/cookiemonsters.png')  
     cookie_starwars = Cookie.new('star wars', 'Black & White Cookies - CP30, Darth Vader, Leia, R2D2, Yoda', 20, '/images/cookiestarwars.png')  
     cookie_toystory = Cookie.new('toy story', 'Chocolate Chip - Buzz Lightyear, Woody', 20, '/images/cookietoystory.png')  
-    @cookies = [cookie_disney, cookie_beauty, cookie_cars, cookie_frozen, cookie_incredible, cookie_mickey, cookie_moana, cookie_monsters, cookie_starwars, cookie_toystory]
-    erb :cookies
+    @items = [cookie_disney, cookie_beauty, cookie_cars, cookie_frozen, cookie_incredible, cookie_mickey, cookie_moana, cookie_monsters, cookie_starwars, cookie_toystory]
+    erb :results
 end
 
 get '/muffins' do
@@ -48,6 +47,6 @@ get '/muffins' do
     muffin_passionfruit = Muffin.new('passionfruit', 'Passion fruit with passion fruit frosting', 5, '/images/muffinpassionfruit.png')
     muffin_raspberry = Muffin.new('raspberry', 'Raspberry with champagne buttercream frosting', 5, '/images/muffinraspberry.png')
     muffin_vanilla = Muffin.new('vanilla', 'Vanilla bean with cream cheese frosting', 5, '/images/muffinvanilla.png')
-    @muffins = [muffin_blueberry, muffin_chocolate, muffin_cranberry, muffin_crumble, muffin_hibiscus, muffin_oat, muffin_passionfruit, muffin_raspberry, muffin_vanilla]
-    erb :muffins
+    @items = [muffin_blueberry, muffin_chocolate, muffin_cranberry, muffin_crumble, muffin_hibiscus, muffin_oat, muffin_passionfruit, muffin_raspberry, muffin_vanilla]
+    erb :results
 end
