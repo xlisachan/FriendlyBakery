@@ -9,7 +9,7 @@
 <img src="https://github.com/xlisachan/madbatterbakery/blob/master/public/images/MadBatterBakery-LandingPage.png"/>
 
 # Features and Functionality
-* Designed a site that conveys the look and feel of a bakery
+* Conveys the look and feel of a bakery
 * Landing page links to each subcategory page (cookies, cakes, and muffins)
 * Each subcategory page displays the assorted baked goods available, as well as information such as name, description, and price
 
