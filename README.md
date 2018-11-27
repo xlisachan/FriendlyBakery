@@ -1,20 +1,17 @@
-# Mad Batter Bakery
-* Built a fullstack website for a bakery that displays information on cookies, cakes, and muffins offered for sale
-* Demonstrated an understanding of how to use the Sinatra microframework
-* Created an adaptive web experience with responsive design for optimal viewing across a wide range of devices (desktop, tablet, and mobile)
+# <a href="https://madbatterbakery.herokuapp.com">Mad Batter Bakery</a>
+* Built a full stack website for a fictitious bakery that displays information on assorted goods for sale
+* Demonstrated an understanding of how to create a site using the Sinatra microframework
+* Constructed a universal template for scalable content by utilizing flexbox and Bootstrap modals
+* Created an adaptive experience with responsive design for optimal viewing across a wide range of devices (desktop, tablet, and mobile)
 
 # Deployment
-<a href="https://madbatterbakery.herokuapp.com/">https://madbatterbakery.herokuapp.com/
-<img src="https://raw.githubusercontent.com/xlisachan/FriendlyBakery/master/public/images/Screen%20Shot%20of%20front%20page.png"/></a>
+<a href="https://madbatterbakery.herokuapp.com/">https://madbatterbakery.herokuapp.com/</a>
+<img src="https://github.com/xlisachan/madbatterbakery/blob/master/public/images/MadBatterBakery-LandingPage.png"/>
 
-# Requirements
-* Look and feel like a bakery website
-* Front page that links to subcategory pages
-* A page for each subcategory (cookies, cakes, and muffins)
+# Features and Functionality
+* Designed a site that conveys the look and feel of a bakery
+* Landing page links to each subcategory page (cookies, cakes, and muffins)
+* Each subcategory page displays the assorted baked goods available, as well as information such as name, description, and price
 
 # Built With
-* Ruby
-* Sinatra
-* HTML
-* Sass
-* VSCode
+Ruby, Sinatra, HTML, Sass, Bootstrap
