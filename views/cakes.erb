@@ -1,14 +1,16 @@
 <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+
 <div class="bakedgoods">
     <% @cakes.each_with_index do |cake, idx|%>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary uppercase flex-col" data-toggle="modal" data-target="#bakedgood<%= idx %>">
             <div>
-                <img class="bakedgood-img" src="<%= cake.image %>">
+                <div class="bakedgood-image"><img class="bakedgood-img" src="<%= cake.image %>"></div>
                 <div class="uppercase"><b><%= cake.name %></b></div>
                 <div class="uppercase">Price: $<%= cake.price %></div>
             </div>
         </button>
+
         <!-- Modal -->
         <div class="modal fade" id="bakedgood<%= idx %>" tabindex="-1" role="dialog" aria-labelledby="bakedgood<%= idx %>Label" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -33,6 +35,7 @@
                 </div>
             </div>
         </div> 
+
+        
     <%end%>
 </div>
-
