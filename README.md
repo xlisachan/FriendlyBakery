@@ -4,10 +4,6 @@
 * Utilized flexbox and Bootstrap modals to help construct a universal template for scalable content 
 * Created an adaptive experience with responsive design for optimal viewing across a wide range of devices (desktop, tablet, and mobile)
 
-# Deployment
-<a href="https://madbatterbakery.herokuapp.com/">https://madbatterbakery.herokuapp.com/</a>
-<img src="https://github.com/xlisachan/madbatterbakery/blob/master/public/images/MadBatterBakery-LandingPage.png"/>
-
 # Features and Functionality
 * Conveys the look and feel of a bakery
 * Landing page links to each subcategory page (cookies, cakes, and muffins)
@@ -15,3 +11,7 @@
 
 # Built With
 Ruby, Sinatra, HTML, Sass, Bootstrap
+
+# Deployment
+<a href="https://madbatterbakery.herokuapp.com/">https://madbatterbakery.herokuapp.com/</a>
+<img src="https://github.com/xlisachan/madbatterbakery/blob/master/public/images/MadBatterBakery-LandingPage.png"/>
