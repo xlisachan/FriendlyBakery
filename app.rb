@@ -8,6 +8,10 @@ get '/' do
     erb :index, :layout => false
 end
 
+get '/about' do
+    erb :about
+end
+
 get '/cakes' do
     cake_cinderella = Cake.new('cinderella', 'Bibbity Bobbity Berry cake, charred marshmallows, strawberry frosting', 75, '/images/cakecinderella.png')
     cake_disney = Cake.new('disney (1-tier)', 'Vanilla rainbow cake, rainbow cake crumbs, sprinkles, vanilla frosting', 50, '/images/cakedisney.png')
