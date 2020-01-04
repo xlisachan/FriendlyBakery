@@ -12,8 +12,8 @@ get '/about' do
     erb :about
 end
 
-get '/location'  do
-    erb :location
+get '/locations'  do
+    erb :locations
 end
 
 get '/cakes' do
