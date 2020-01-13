@@ -4,6 +4,7 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
+  min-width: 300px;
 }
 
 a, a:hover {
@@ -11,7 +12,124 @@ a, a:hover {
   text-decoration: none;
 }
 
-.flex-col {
+header {
+  color: white;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: bold;
+}
+
+header a, header a:hover, header a:visited {
+  color: white;
+}
+
+.banner {
+  height: 13vh;
+  min-height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background: repeating-linear-gradient(to right, #195f53, #195f53 40px, #379637 40px, #379637 90px);
+}
+
+.title, .navigation-bar, .baked-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.logo {
+  width: 10vw;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.bakery-name {
+  font-size: 1.8rem;
+}
+
+.navigation-bar a {
+  text-transform: lowercase;
+}
+
+.menu-item {
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 7vh;
+  min-height: 50px;
+  border: 2px solid black;
+  border-radius: 10px 10px 100px 100px;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+  background: repeating-linear-gradient(to right, #195f53, #195f53 60px, #379637 60px, #379637 110px);
+}
+
+.main-outer {
+  width: 90%;
+  min-width: 300px;
+  height: 68vh;
+  margin: 2vh auto;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gold {
+  background-color: gold;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.feature-top a, .feature-top a:active, .feature-top a:link, .feature-top a:visited {
+  width: 30%;
+}
+
+.goods {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.group {
+  padding: 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,137 +140,33 @@ a, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.good {
   width: 100%;
+  margin: 0 3px;
 }
 
-.flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-header, .navigation-bar a {
-  width: 100%;
-}
-
-.header-top {
-  height: 13vh;
-  min-height: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: repeating-linear-gradient(to right, #7D3828, #7D3828 40px, #9D432E 40px, #9D432E 90px);
-}
-
-.logo {
-  width: 30vw;
-  height: 10vh;
-  background-color: beige;
-  font-family: "Love Ya Like A Sister", cursive;
-  font-size: 1.5em;
-  font-weight: bold;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 250px;
-  min-width: 180px;
-  min-height: 80px;
-  border: 5px dotted black;
-  border-radius: 50%;
-  color: black;
-  text-align: center;
-  letter-spacing: 1px;
-  line-height: 0.9;
-}
-
-.logo:hover {
-  color: black;
-  letter-spacing: 1px;
-}
-
-.tab {
-  background: repeating-linear-gradient(to right, #7D3828, #7D3828 40px, #9D432E 40px, #9D432E 90px);
-  font-size: 1em;
-  font-weight: bold;
-  color: white;
-  width: 100%;
-  height: 7vh;
-  min-height: 50px;
-  border: 2px solid black;
-  border-radius: 10px 10px 100px 100px;
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.tab:hover {
-  color: white;
-}
-
-.main-outer {
-  width: 90%;
-  max-width: 1000px;
-  min-width: 300px;
-  height: 66vh;
-  margin: 3vh auto;
-  border-radius: 10px 10px 10px 10px;
-  overflow: auto;
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
-}
-
-.feature-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 90%;
-  position: relative;
-  top: 80px;
-}
-
-.feature-top a, .feature-top a:active, .feature-top a:link, .feature-top a:visited, .feature-top .register-draw {
-  width: 20%;
-}
-
-.baked-row1 {
+.row-30 {
   width: 30%;
 }
 
-.baked-row2 {
+.row-60 {
   width: 60%;
+}
+
+.row-100, .platter {
+  width: 90%;
 }
 
 .pastry, .cookie, .muffintop {
   margin: 1px;
+  width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 
 .cookie {
-  width: 100%;
-  height: 1.3vh;
+  height: 8px;
 }
 
 .top-cookie {
@@ -160,7 +174,7 @@ header, .navigation-bar a {
           animation: shake 3s infinite;
 }
 
-.cherries {
+.cherry {
   width: 1.5vh;
   height: 1.5vh;
   border-radius: 50%;
@@ -170,22 +184,30 @@ header, .navigation-bar a {
   position: relative;
 }
 
-.cherries:nth-child(2), .cherries:nth-child(4) {
+.cherry:nth-child(2), .cherry:nth-child(4) {
   -webkit-animation-delay: -0.5s;
           animation-delay: -0.5s;
 }
 
 .frosting {
-  width: 90%;
+  width: 100%;
   height: 1vh;
   background-color: beige;
 }
 
+.cake {
+  width: 100%;
+  max-width: 350px;
+}
+
 .cake-layer {
-  width: 90%;
+  width: 100%;
   height: 2vh;
   background-color: #79391b;
-  border-radius: 0px 0px 5px 5px;
+}
+
+.cake-bottom {
+  border-radius: 0 0 5px 5px;
 }
 
 .top-muffin {
@@ -194,13 +216,13 @@ header, .navigation-bar a {
 }
 
 .muffintop {
-  width: 80%;
   height: 1.5vh;
+  margin: 0 auto;
 }
 
 .muffinbot {
   width: 80%;
-  height: 0;
+  margin: 0 auto;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: 10px solid;
@@ -209,16 +231,15 @@ header, .navigation-bar a {
 .pedestal {
   width: 8%;
   height: 4vh;
-  background-color: turquoise;
-  margin: -2px;
+  margin: -2px auto;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
 }
 
 .tin-row, .tin-row1, .tin-row2 {
-  width: 90%;
+  width: 100%;
   height: 1vh;
-  margin: 2px 2px;
+  margin: 2px 0;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
 }
@@ -231,113 +252,115 @@ header, .navigation-bar a {
   border-radius: 10px 10px 0px 0px;
 }
 
-.register, .register-pad, .register-stand, .register-base {
-  border-radius: 10px 10px 10px 10px;
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
-  position: relative;
-}
-
-.register-pad {
-  width: 100%;
-  height: 10vh;
-  background-color: white;
-  top: -20px;
-}
-
-.register-stand {
-  width: 10%;
-  height: 9vh;
-  background-color: white;
-  top: 30px;
-  z-index: 1;
-}
-
-.register-base {
-  width: 90%;
-  height: 1vh;
-  background-color: white;
-  margin: 2px;
-}
-
-.feature-bottom {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  position: relative;
-  top: 80px;
-}
-
-.table-top {
-  width: 80%;
-  height: 2vh;
-  background-color: #7D3828;
-  border-radius: 2px;
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
-}
-
-.table-bottom {
+.counter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 80%;
-  height: 30vh;
-  background-color: #83663D;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 2px 0px;
-  padding: 6px 5px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.counter-top {
+  width: 90%;
+  height: 2vh;
+  background-color: gray;
   border-radius: 5px;
-  color: white;
-  font-size: 0.7em;
-  text-align: center;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+}
+
+.counter-bottom {
+  width: 85%;
+  height: 18vh;
+  margin: 0 auto;
+  background-color: rgba(0, 206, 209, 0.4);
+  border-radius: 5px;
+  position: relative;
+  top: -85px;
+  margin-top: -18vh;
+}
+
+.display-case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display-row {
+  width: 95%;
+  height: 0.5vh;
+  background-color: rgba(0, 206, 209, 0.7);
+  margin: 2px 0 10px 0;
 }
 
 .floor {
   width: 100%;
-  height: 21vh;
+  height: 14vh;
   background-color: #eee;
   background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
   background-size: 60px 60px;
   background-position: 0px 0px, 30px 30px;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+.feature-header {
+  color: #379637;
+  font-family: "Love Ya Like A Sister", cursive;
+  text-transform: uppercase;
 }
 
-footer a {
-  color: gray;
-  font-size: 2em;
+.feature-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature-text {
+  margin-right: 30px;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+}
+
+.feature-image, .feature-image2 {
+  padding: 10px 0;
+}
+
+.days {
+  width: 100px;
 }
 
 .bakedgoods {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .modal-title {
@@ -362,6 +385,21 @@ footer a {
 .bakedgood-img {
   width: 90%;
   height: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: white;
+}
+
+footer a {
+  color: gray;
+  font-size: 2em;
+  padding: 0 10px;
 }
 
 @-webkit-keyframes bounce {
@@ -524,10 +562,6 @@ footer a {
   background-color: peru;
 }
 
-.gold {
-  background-color: gold;
-}
-
 .pink {
   background-color: pink;
 }
@@ -536,24 +570,24 @@ footer a {
   background-color: white;
 }
 
+.darkturquoise {
+  background-color: darkturquoise;
+}
+
 .rebeccapurple {
   background-color: rebeccapurple;
 }
 
-.turquoise {
-  background-color: turquoise;
+.hotpink {
+  background-color: hotpink;
+}
+
+.darkviolet {
+  color: darkviolet;
 }
 
 .limegreen {
-  background-color: limegreen;
-}
-
-.cornflowerblue {
-  color: cornflowerblue;
-}
-
-.rebeccapurple {
-  color: rebeccapurple;
+  color: limegreen;
 }
 
 .fuchsia {
@@ -561,20 +595,144 @@ footer a {
 }
 
 @media (min-width: 768px) {
-  .logo {
-    font-size: 2em;
+  .bakery-name {
+    font-size: 2.5rem;
   }
-  .table-bottom {
-    font-size: 1em;
+  .navigation-bar a {
+    font-size: 1.5rem;
+  }
+  .goods {
+    width: 100%;
+  }
+  .cookie {
+    height: 11px;
+  }
+  .cookie, .muffintop {
+    border-radius: 30px 30px 5px 5px;
+  }
+  .cookie, .tin-row, .tin-row1, .tin-row2 {
+    height: 2vh;
+  }
+  .cherry {
+    width: 3vh;
+    height: 3vh;
+  }
+  .frosting {
+    height: 2vh;
+  }
+  .cake-layer {
+    height: 4vh;
+  }
+  .cake-bottom {
+    border-radius: 0 0 10px 10px;
+  }
+  .pedestal {
+    height: 7vh;
+  }
+  .muffintop {
+    height: 3vh;
+  }
+  .muffinbot {
+    border-top: 13px solid;
+  }
+  .counter-top {
+    width: 95%;
+  }
+  .counter-bottom {
+    width: 90%;
+    height: 22vh;
+    margin-top: -22vh;
+    top: -67px;
+  }
+  .display-case {
+    top: -29vh;
+  }
+  .display-row {
+    width: 100%;
+  }
+  .floor {
+    height: 10vh;
   }
   .btn, .btn-primary {
     width: 40%;
   }
+  .feature-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .feature-image {
+    width: auto;
+    height: 60vh;
+  }
 }
 
 @media (min-width: 1024px) {
+  .logo {
+    width: 6vw;
+  }
+  .bakery-name {
+    font-size: 3rem;
+  }
+  .cake-layer {
+    height: 5vh;
+  }
+  .pedestal {
+    height: 8vh;
+  }
+  .muffintop {
+    height: 4vh;
+  }
+  .counter-bottom {
+    height: 25vh;
+    margin-top: -25vh;
+    top: -70px;
+  }
+  .display-case {
+    top: -25vh;
+  }
   .btn, .btn-primary {
     width: 30%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cookie {
+    height: 3vh;
+  }
+  .cake-bottom {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@media (min-width: 2560px) {
+  body {
+    font-size: 2rem;
+  }
+  .bakery-name {
+    font-size: 5rem;
+  }
+  .navigation-bar a {
+    font-size: 3rem;
+  }
+  .muffinbot {
+    border-top: 25px solid;
+  }
+  .feature-header {
+    font-size: 3.5rem;
+  }
+  .feature-image2 {
+    width: 30vw;
+    height: auto;
+  }
+  .counter-bottom {
+    height: 20vh;
+  }
+  .display-case {
+    top: -20vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

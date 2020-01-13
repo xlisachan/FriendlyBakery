@@ -3,9 +3,10 @@
 @import './partials/mixins';
 @import './partials/variables';
 
-body{
+body {
     font-family: $content;
     font-size: 16px;
+    min-width: 300px;
 }
 
 a, a:hover {
@@ -13,137 +14,150 @@ a, a:hover {
     text-decoration: none;
 }
 
-.flex-col{
-    @include flexbox(flex, column, center);
-    width: 100%;
-}
-
-.flex-row{
-    @include flexbox(flex, row, center);
-}
-
-.uppercase{
-    text-transform: uppercase;
-}
-
 // Header
-header, .navigation-bar a {
-    width: 100%;
-}
-
-.header-top{
-    height: 13vh;
-    min-height: 100px;
-    justify-content: center;
-    background: repeating-linear-gradient(
-        to right,
-        $banner-dark,
-        $banner-dark 40px,
-        $banner-med 40px,
-        $banner-med 90px
-    );
-}
-
-.logo{
-    @include whbgc(30vw, 10vh, beige);
-    font : {
-        family: $logo;
-        size: 1.5em;
-        weight: bold;
-    }
-    justify-content: center;
-    max-width: 250px;
-    min-width: 180px;
-    min-height: 80px;
-    border: 5px dotted black;
-    border-radius: 50%;
-    color:black;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 0.9;   
-
-    &:hover {
-        color: black;
-        letter-spacing: 1px;
-    }
-}
-
-.tab {
-    background: repeating-linear-gradient(
-        to right,
-        $banner-dark,
-        $banner-dark 40px,
-        $banner-med 40px,
-        $banner-med 90px
-    );
-
-    font : {
-        size: 1em;
-        weight: bold;
-    }
+header {
     color: white;
+
+    font-family: $logo;
+    font-weight: bold;
+
+    a, a:hover, a:visited {
+        color: white;
+    }
+}
+
+.banner {
+    height: 13vh;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: repeating-linear-gradient(
+        to right,
+        $banner-dark,
+        $banner-dark 40px,
+        $banner-med 40px,
+        $banner-med 90px
+    );
+}
+
+.title, .navigation-bar, .baked-row {
+    display: flex;
+}
+
+.title {
+    align-items: baseline;
+}
+
+.logo {
+    width: 10vw;
+    transform: rotate(-30deg);
+}
+
+.bakery-name {
+    font-size: 1.8rem;
+}
+
+.navigation-bar {
+    a {
+        text-transform: lowercase;
+    }
+}
+
+.menu-item {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 7vh;
     min-height: 50px;
     border: 2px solid black;
     border-radius: 10px 10px 100px 100px;
     box-shadow: 5px 10px 18px #888888;
-    // color: white;
-    justify-content: center;
-
-    &:hover {
-        color: white;
-    }
-}
+    background: repeating-linear-gradient(
+        to right,
+        $banner-dark,
+        $banner-dark 60px,
+        $banner-med 60px,
+        $banner-med 110px
+    );
+};
 
 // Main Container
-.main-outer{
+.main-outer {
     width: 90%;
-    max-width: 1000px;
     min-width: 300px;
-    height: 66vh;
-    margin: 3vh auto;
-    border-radius: $register-border-radius;
+    height: 68vh;
+    margin: 2vh auto;
     overflow: auto;
-    box-shadow: 5px 10px 18px #888888;
+    display: flex;
+    flex-direction: column;
 }
 
-//Index
-.feature-top{
-    @include flexbox(flex, row, flex-end);
-    justify-content: center;
-    width: 90%;
-    position: relative;
-    top: 80px;
-    a, a:active, a:link, a:visited, .register-draw{
-        width: 20%;
+.gold {
+    background-color: gold;
+    border-radius: $register-border-radius;
+    box-shadow: 5px 10px 18px #888888;
+    justify-content: flex-end;
+}
+
+// Index
+.feature-top {
+    a, a:active, a:link, a:visited {
+        width: 30%;
     }
 }
 
-.baked-row1{
+.goods {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.group {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.good {
+    width: 100%;
+    margin: 0 3px;
+}
+
+.row-30 {
     width: 30%;
 }
 
-.baked-row2{
+.row-60 {
     width: 60%;
+}
+
+.row-100, .platter {
+    width: 90%;
 }
 
 .pastry {
     margin: 1px;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 
-.cookie{ 
+.cookie { 
     @extend .pastry;
-    width: 100%;
-    height: 1.3vh;
+    height: 8px;
 }
 
 .top-cookie {
     animation: shake 3s infinite;
 }
 
-.cherries {
+.cherry {
     width: 1.5vh;
     height: 1.5vh;
     border-radius: 50%;
@@ -152,17 +166,25 @@ header, .navigation-bar a {
     position: relative;
 }
 
-.cherries:nth-child(2), .cherries:nth-child(4),{
+.cherry:nth-child(2), .cherry:nth-child(4) {
     animation-delay: -0.5s;
 }
 
-.frosting{
-    @include whbgc(90%, 1vh, beige);
+.frosting {
+    @include whbgc(100%, 1vh, beige);
+}
+
+.cake {
+    width: 100%;
+    max-width: 350px;
 }
 
 .cake-layer{
-    @include whbgc(90%, 2vh, $fudge);
-    border-radius: 0px 0px 5px 5px;
+    @include whbgc(100%, 2vh, $fudge);
+}
+
+.cake-bottom {
+    border-radius: 0 0 5px 5px;
 }
 
 .top-muffin {
@@ -171,13 +193,13 @@ header, .navigation-bar a {
 
 .muffintop{
     @extend .pastry;
-    width: 80%;
     height: 1.5vh;
+    margin: 0 auto;
 }
 
-.muffinbot{
+.muffinbot {
     width: 80%;
-    height: 0; 
+    margin: 0 auto;
     border : {
         left: 1px solid transparent;
         right: 1px solid transparent;
@@ -185,20 +207,21 @@ header, .navigation-bar a {
     }
 }
 
-.pedestal{
-    @include whbgc(8%, 4vh, turquoise);
-    margin: -2px;
+.pedestal {
+    width: 8%;
+    height: 4vh,;
+    margin: -2px auto;
     box-shadow: 5px 10px 18px #888888;
 }
 
-.tin-row{
-    width: 90%;
+.tin-row {
+    width: 100%;
     height: 1vh;
-    margin: 2px 2px;
+    margin: 2px 0;
     box-shadow: 5px 10px 18px #888888;
 }
 
-.tin-row1{
+.tin-row1 {
     @extend .tin-row;
     border-radius: 0px 0px 10px 10px;
 }
@@ -207,80 +230,84 @@ header, .navigation-bar a {
     border-radius: 10px 10px 0px 0px;
 }
 
-.register {
-    border-radius: $register-border-radius;
-    box-shadow: 5px 10px 18px #888888;
-    position: relative;
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.register-pad{
-    @extend .register;
-    @include whbgc(100%, 10vh, white);
-    top: -20px;
-}
-
-.register-stand{
-    @extend .register;
-    @include whbgc(10%, 9vh, white);
-    top: 30px;
-    z-index: 1;
-}
-
-.register-base{
-    @extend .register;
-    @include whbgc(90%, 1vh, white);
-    margin: 2px;
-}
-
-.feature-bottom{
-    justify-content: flex-start;
-    position: relative;
-    top: 80px;
-}
-
-.table-top{
-    @include whbgc(80%, 2vh, $banner-dark);
-    border-radius: 2px;
-    box-shadow: 5px 10px 18px #888888;
-}
-
-.table-bottom{
-    @include flexbox(flex, row, flex-start);
-    @include whbgc(80%, 30vh, #83663D);
-    justify-content: space-around;
-    margin: 2px 0px;
-    padding: 6px 5px;
+.counter-top {
+    @include whbgc(90%, 2vh, gray);
     border-radius: 5px;
-    color: white;
-    font-size: 0.7em;
-    text-align: center;
+    box-shadow: 5px 10px 18px #888888;
 }
 
-.floor{
-    @include whbgc(100%, 21vh, #eee);
+.counter-bottom {
+    width: 85%;
+    height: 18vh;
+    margin: 0 auto;
+    background-color: rgba(0, 206, 209, .4);
+    border-radius: 5px;
+    position: relative;
+    top: -85px;
+    margin-top: -18vh;
+}
+
+.display-case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-row {
+    @include whbgc(95%, .5vh, rgba(0, 206, 209, .7));
+    margin: 2px 0 10px 0;
+}
+
+.floor {
+    @include whbgc(100%, 14vh, #eee);
     background : {
         image:
-        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
-        linear-gradient(45deg, rgb(0, 0, 0) 25%, transparent 25%, transparent 75%, black 75%, black);
+            linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+            linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
         size: 60px 60px;
         position: 0px 0px, 30px 30px;
     }
 }
 
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
+// feature pages
+.feature-header {
+    color: $banner-med;
+    font-family: $logo;
+    text-transform: uppercase;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-text {
+    margin-right: 30px;
+}
+
+.feature-image {
     width: 100%;
-    a {
-        color: gray;
-        font-size: 2em;
-    }
+    height: auto;
+}
+
+.feature-image, .feature-image2 {
+    padding: 10px 0;
+}
+
+.days {
+    width: 100px;
 }
 
 // Feature Pages
 .bakedgoods{
-    @include flexbox(flex, row, flex-start);
+    display: flex;
+    align-items: flex-start;
     justify-content: space-evenly;
     flex-flow: row wrap;
 }
@@ -307,6 +334,22 @@ footer{
 .bakedgood-img {
     width: 90%;
     height: auto;
+}
+
+// footer
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: white;
+    
+    a {
+        color: gray;
+        font-size: 2em;
+        padding: 0 10px;
+    }
 }
 
 // Animation
@@ -352,21 +395,174 @@ footer{
 
 //Media Queries - Tablet and Desktop
 @media (min-width: 768px){
-    .logo{
-        font-size: 2em;
+    .bakery-name {
+        font-size: 2.5rem;
     }
 
-    .table-bottom{
-        font-size: 0.9em;
+    .navigation-bar a {
+        font-size: 1.5rem;
+    }
+
+    .goods {
+        width: 100%;
+    }
+
+    .cookie {
+        height: 11px;
+    }
+
+    .cookie, .muffintop {
+        border-radius: 30px 30px 5px 5px;
+    }
+
+    .cookie, .tin-row {
+        height: 2vh;
+    }
+
+    .cherry {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .frosting {
+        height: 2vh;
+    }
+
+    .cake-layer {
+        height: 4vh;
+    }
+
+    .cake-bottom {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .pedestal {
+        height: 7vh;
+    }
+
+    .muffintop {
+        height: 3vh;
+    }
+
+    .muffinbot {
+        border-top: 13px solid;
+    }
+
+    .counter-top {
+        width: 95%;
+    }
+
+    .counter-bottom {
+        width: 90%;
+        height: 22vh;
+        margin-top: -22vh;
+        top: -67px;
+    }
+
+    .display-case {
+        top: -29vh;
+    }
+
+    .display-row {
+        width: 100%;
+    }
+
+    .floor {
+        height: 10vh;
     }
 
     .btn, .btn-primary{
         width: 40%;
     }
+
+    .feature-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .feature-image {
+        width: auto;
+        height: 60vh;
+    }
 }
 
 @media (min-width: 1024px){
+    .logo {
+        width: 6vw;
+    }
+
+    .bakery-name {
+        font-size: 3rem;
+    }
+
+    .cake-layer {
+        height: 5vh;
+    }
+
+    .pedestal {
+        height: 8vh;
+    }
+
+    .muffintop {
+        height: 4vh;
+    }
+    
+    .counter-bottom {
+        height: 25vh;
+        margin-top: -25vh;
+        top: -70px;
+    }
+
+    .display-case {
+        top: -25vh;
+    }
+
     .btn, .btn-primary{
         width: 30%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cookie {
+        height: 3vh;
+    }
+
+    .cake-bottom {
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media (min-width: 2560px) {
+    body {
+        font-size: 2rem;
+    }
+
+    .bakery-name {
+        font-size: 5rem;
+    }
+
+    .navigation-bar a {
+        font-size: 3rem;
+    }
+
+    .muffinbot {
+        border-top: 25px solid;
+    }
+
+    .feature-header {
+        font-size: 3.5rem;
+    }
+
+    .feature-image2 {
+        width: 30vw;
+        height: auto;
+    }    
+
+    .counter-bottom {
+        height: 20vh;
+    }
+
+    .display-case {
+        top: -20vh;
     }
 }
