@@ -1,38 +1,66 @@
 <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
-<div class="bakedgoods">
-    <% @items.each_with_index do |item, idx|%>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary flex-col uppercase" data-toggle="modal" data-target="#bakedgood<%= idx %>">
-            <div>
-                <img class="bakedgood-img" src="<%= item.image %>">
-                <div class="uppercase"><b><%= item.name %></b></div>
-                <div class="uppercase">Price: $<%= item.price %></div>
-            </div>
-        </button>
-        <!-- Modal -->
-        <div class="modal fade" id="bakedgood<%= idx %>" tabindex="-1" role="dialog" aria-labelledby="bakedgood<%= idx %>Label" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header uppercase">
-                        <h5 class="modal-title" id="bakedgood<%= idx %>Label"><b><%= item.name %></b></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body flex-col">
-                        <img class="bakedgood-img" src="<%= item.image %>">
-                        <br/>
-                        <%= item.description %>
-                        <br/>
-                        <br/>
-                        Price: $<%= item.price %>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary flex-col uppercase" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    <%end%>
-</div>
 
+<div>
+    <h3 class="feature-header">Menu</h3>
+
+    <div class="feature-content">
+        <side class="feature-sign">
+            <div class="feature-menu">
+                <a href="/cakes">cakes</a>
+
+                <a href="/cookies">cookies</a>
+
+                <a href="/muffins">muffins</a>
+            </div>
+            
+            <div class="feature-menu-bg">
+                <div class="feature-menu-stand"></div>
+                <div class="feature-menu-ground"></div>
+            </div>
+        </side>
+    
+        <section class="feature-main">
+            <h5><%= @title %></h5>
+
+            <div class="feature-flex">
+                <% @items.each_with_index do |item, idx|%>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-toggle="modal" data-target="#bakedgood<%= idx %>">
+                        <img class="bakedgood-img" src="<%= item.image %>" alt="<%= item.description %>">
+                        <p><%= item.name %></p>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="bakedgood<%= idx %>" tabindex="-1" role="dialog" aria-labelledby="bakedgood<%= idx %>Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="bakedgood<%= idx %>Label">
+                                        <%= item.name %>
+                                    </h4>
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img class="modal-img" src="<%= item.image %>">
+                                    
+                                    <div>
+                                        <p><%= item.description %></p>
+                                        <p>$<%= item.price %></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </section>
+    </div>
+</div>
