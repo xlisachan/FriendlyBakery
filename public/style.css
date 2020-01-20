@@ -87,8 +87,8 @@ header a, header a:hover, header a:visited {
 
 .main-outer {
   width: 90%;
-  min-width: 300px;
-  height: 68vh;
+  min-width: 280px;
+  height: 70vh;
   margin: 2vh auto;
   overflow: auto;
   display: -webkit-box;
@@ -347,6 +347,156 @@ header a, header a:hover, header a:visited {
   width: 100px;
 }
 
+.feature-main {
+  font-size: 2rem;
+}
+
+.feature-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -5vh;
+}
+
+.feature-menu {
+  margin: 0 25px 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-menu a {
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #fff;
+  background: #195f53;
+  text-decoration: none;
+  position: relative;
+  line-height: 30px;
+  margin: 3px;
+  padding: 0 8px;
+  text-transform: uppercase;
+}
+
+.feature-menu a::before, .feature-menu a::after {
+  content: "";
+  position: absolute;
+  border-color: #195f53;
+  border-style: solid;
+  border-width: 15px 6px;
+}
+
+.feature-menu a::before {
+  left: -5px;
+  border-left-color: transparent;
+}
+
+.feature-menu a::after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #195f53;
+}
+
+.feature-menu a:nth-child(2) {
+  background: #379637;
+}
+
+.feature-menu a:nth-child(2)::before, .feature-menu a:nth-child(2)::after {
+  border-color: #379637;
+}
+
+.feature-menu a:nth-child(2)::before {
+  left: -12px;
+  border-color: transparent;
+  border-right-color: #379637;
+}
+
+.feature-menu a:nth-child(2)::after {
+  left: 100%;
+  border-right-color: transparent;
+}
+
+.feature-menu a:hover {
+  background-color: darkturquoise;
+}
+
+.feature-menu a:hover::before {
+  border-color: darkturquoise;
+  border-left-color: transparent;
+}
+
+.feature-menu a:hover::after {
+  border-left-color: darkturquoise;
+}
+
+.feature-menu a:nth-child(2):hover::before {
+  border-color: transparent;
+  border-right-color: darkturquoise;
+}
+
+.feature-menu a:nth-child(2):hover::after {
+  border-color: darkturquoise;
+  border-right-color: transparent;
+}
+
+.feature-menu :focus {
+  outline: none;
+}
+
+.feature-menu-bg {
+  position: relative;
+  top: -10vh;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-menu-stand {
+  background: rosybrown;
+  width: .5vw;
+  height: 15vh;
+}
+
+.feature-menu-ground {
+  width: 100px;
+  border: 1px solid black;
+}
+
+.feature-main {
+  height: 37vh;
+  overflow: auto;
+}
+
+.feature-flex {
+  display: -ms-grid;
+  display: grid;
+  overflow: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .bakedgoods {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,24 +517,36 @@ header a, header a:hover, header a:visited {
   white-space: nowrap;
 }
 
-.btn, .btn-primary {
-  margin: 10px 5px;
-  background-color: transparent;
-  border-color: transparent;
-  color: black;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
+.modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.btn:hover, .btn-primary:hover {
-  background-color: transparent;
-  border: 0px transparent;
+.modal-body p {
+  font-size: 1rem;
+}
+
+.modal-img {
+  width: 50%;
+  padding-right: 15px;
+}
+
+.btn {
+  background: transparent;
+}
+
+.btn-primary {
+  border: black;
   color: black;
 }
 
 .bakedgood-img {
-  width: 90%;
-  height: auto;
+  width: 80%;
 }
 
 footer {
@@ -653,9 +815,6 @@ footer a {
   .floor {
     height: 10vh;
   }
-  .btn, .btn-primary {
-    width: 40%;
-  }
   .feature-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -667,6 +826,25 @@ footer a {
   .feature-image {
     width: auto;
     height: 60vh;
+  }
+  .feature-main {
+    height: 64vh;
+  }
+  .feature-main h5 {
+    margin-left: 6vw;
+  }
+  .feature-sign {
+    margin-bottom: 0;
+  }
+  .feature-flex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (35vw)[2];
+        grid-template-columns: repeat(2, 35vw);
+    overflow: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -694,8 +872,9 @@ footer a {
   .display-case {
     top: -25vh;
   }
-  .btn, .btn-primary {
-    width: 30%;
+  .feature-flex {
+    -ms-grid-columns: (26vw)[3];
+        grid-template-columns: repeat(3, 26vw);
   }
 }
 
@@ -705,6 +884,10 @@ footer a {
   }
   .cake-bottom {
     border-radius: 0 0 20px 20px;
+  }
+  .feature-flex {
+    -ms-grid-columns: (20vw)[4];
+        grid-template-columns: repeat(4, 20vw);
   }
 }
 
@@ -733,6 +916,12 @@ footer a {
   }
   .display-case {
     top: -20vh;
+  }
+  .feature-menu-bg {
+    top: -5vh;
+  }
+  .feature-menu-stand {
+    height: 10vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

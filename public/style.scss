@@ -17,7 +17,6 @@ a, a:hover {
 // Header
 header {
     color: white;
-
     font-family: $logo;
     font-weight: bold;
 
@@ -88,8 +87,8 @@ header {
 // Main Container
 .main-outer {
     width: 90%;
-    min-width: 300px;
-    height: 68vh;
+    min-width: 280px;
+    height: 70vh;
     margin: 2vh auto;
     overflow: auto;
     display: flex;
@@ -304,6 +303,135 @@ header {
     width: 100px;
 }
 
+.feature-main {
+    font-size: 2rem;
+}
+
+.feature-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -5vh;
+}
+
+.feature-menu {
+    margin: 0 25px 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        font-family: $logo;
+        color: #fff;
+        background: $banner-dark;
+        text-decoration: none;
+        position: relative;
+        line-height: 30px;
+        margin: 3px;
+        padding: 0 8px;
+        text-transform: uppercase;
+    }
+    
+    a::before, a::after {
+        content: "";
+        position: absolute;
+        border-color: $banner-dark;
+        border-style: solid;
+        border-width: 15px 6px;
+    }
+
+    a::before {
+        left: -5px;
+        border-left-color: transparent;
+    }
+
+    a::after {
+        left: 100%;
+        border-color: transparent;
+        border-left-color: $banner-dark;
+    }
+
+    a:nth-child(2) {
+        background: $banner-med;
+    }
+        
+    a:nth-child(2)::before, a:nth-child(2)::after {
+        border-color: $banner-med;
+    }
+
+    a:nth-child(2)::before {
+        left: -12px;
+        border-color: transparent;
+        border-right-color: $banner-med;
+    }
+
+    a:nth-child(2)::after {
+        left: 100%;
+        border-right-color: transparent;
+    }
+
+    a:hover {
+        background-color: darkturquoise;
+    }
+
+    a:hover::before {
+        border-color: darkturquoise;
+        border-left-color: transparent;
+    }
+
+    a:hover::after {
+        border-left-color: darkturquoise;
+    }
+
+    a:nth-child(2):hover::before {
+        border-color: transparent;
+        border-right-color: darkturquoise;
+    }
+
+    a:nth-child(2):hover::after {
+        border-color: darkturquoise;
+        border-right-color: transparent;
+    }
+
+    :focus {
+        outline: none;
+    }
+}
+
+.feature-menu-bg {
+    position: relative;
+    top: -10vh;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-menu-stand {
+    background: rosybrown;
+    width: .5vw;
+    height: 15vh;
+}
+
+.feature-menu-ground {
+    width: 100px;
+    border: 1px solid black;
+}
+
+.feature-main {
+    height: 37vh;
+    overflow: auto;
+}
+
+.feature-flex {
+    display: grid;
+    // grid-template-columns: repeat(1, 120px);
+    // grid-auto-rows: 120px;
+    // grid-auto-flow: row;
+    overflow: auto;
+    justify-content: center;
+}
+
 // Feature Pages
 .bakedgoods{
     display: flex;
@@ -312,28 +440,35 @@ header {
     flex-flow: row wrap;
 }
 
-.modal-title{
+.modal-title {
     white-space: nowrap;
 }
 
-.btn, .btn-primary{
-    margin: 10px 5px;
-    background-color: transparent;
-    border-color: transparent;
-    color: black;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
+.modal-body {
+    display: flex;
+    flex-direction: row;
 
-    &:hover {
-        background-color: transparent;
-        border: 0px transparent;
-        color: black;
+    p {
+        font-size: 1rem;
     }
 }
 
+.modal-img {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.btn {
+    background: transparent;
+}
+
+.btn-primary {
+    border: black;
+    color: black;
+}
+
 .bakedgood-img {
-    width: 90%;
-    height: auto;
+    width: 80%;
 }
 
 // footer
@@ -471,9 +606,6 @@ footer {
         height: 10vh;
     }
 
-    .btn, .btn-primary{
-        width: 40%;
-    }
 
     .feature-content {
         flex-direction: row;
@@ -483,6 +615,25 @@ footer {
     .feature-image {
         width: auto;
         height: 60vh;
+    }
+
+    .feature-main {
+        height: 64vh;
+
+        h5 {
+            margin-left: 6vw;
+        }
+    }
+
+    .feature-sign {
+        margin-bottom: 0;
+    }
+
+    .feature-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 35vw);
+        overflow: auto;
+        justify-content: center;
     }
 }
 
@@ -517,8 +668,8 @@ footer {
         top: -25vh;
     }
 
-    .btn, .btn-primary{
-        width: 30%;
+    .feature-flex {
+        grid-template-columns: repeat(3, 26vw);
     }
 }
 
@@ -529,6 +680,10 @@ footer {
 
     .cake-bottom {
         border-radius: 0 0 20px 20px;
+    }
+
+    .feature-flex {
+        grid-template-columns: repeat(4, 20vw);
     }
 }
 
@@ -564,5 +719,13 @@ footer {
 
     .display-case {
         top: -20vh;
+    }
+
+    .feature-menu-bg {
+        top: -5vh;
+    }
+
+    .feature-menu-stand {
+        height: 10vh;
     }
 }
