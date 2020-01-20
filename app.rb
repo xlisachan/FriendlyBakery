@@ -12,6 +12,10 @@ get '/about' do
     erb :about
 end
 
+get '/menu' do
+    erb :menu
+end
+
 get '/locations'  do
     erb :locations
 end
@@ -26,7 +30,10 @@ get '/cakes' do
     cake_toystory = Cake.new('toy story', 'Brown butter cake, apple compote, brown butter cheesecake, pie crumbs, pie dough frosting', 100, '/images/caketoystory.png')
     cake_pooh = Cake.new('winnie the pooh (1-tier)', 'Salted pretzel cake, chocolate stout ganache, pretzel crumbs, burnt honey frosting', 50, '/images/cakepooh.png')
     cake_pooh2 = Cake.new('winnie the pooh (2-tier)', 'Salted pretzel cake, chocolate stout ganache, pretzel crumbs, burnt honey frosting', 100, '/images/cakepooh2.png')
+    
+    @title = 'cakes'
     @items = [cake_cinderella, cake_disney, cake_disney2, cake_nemo, cake_mickey, cake_minnie, cake_toystory, cake_pooh, cake_pooh2]
+
     erb :results
 end
 
@@ -41,7 +48,10 @@ get '/cookies' do
     cookie_monsters = Cookie.new('monsters inc', 'Peanut Butter Cookies - Mike, Sully, Doors', 20, '/images/cookiemonsters.png')  
     cookie_starwars = Cookie.new('star wars', 'Black & White Cookies - CP30, Darth Vader, Leia, R2D2, Yoda', 20, '/images/cookiestarwars.png')  
     cookie_toystory = Cookie.new('toy story', 'Chocolate Chip - Buzz Lightyear, Woody', 20, '/images/cookietoystory.png')  
+    
+    @title = 'cookies'
     @items = [cookie_disney, cookie_beauty, cookie_cars, cookie_frozen, cookie_incredible, cookie_mickey, cookie_moana, cookie_monsters, cookie_starwars, cookie_toystory]
+
     erb :results
 end
 
@@ -55,6 +65,9 @@ get '/muffins' do
     muffin_passionfruit = Muffin.new('passionfruit', 'Passion fruit with passion fruit frosting', 5, '/images/muffinpassionfruit.png')
     muffin_raspberry = Muffin.new('raspberry', 'Raspberry with champagne buttercream frosting', 5, '/images/muffinraspberry.png')
     muffin_vanilla = Muffin.new('vanilla', 'Vanilla bean with cream cheese frosting', 5, '/images/muffinvanilla.png')
+    
+    @title = 'muffins'
     @items = [muffin_blueberry, muffin_chocolate, muffin_cranberry, muffin_crumble, muffin_hibiscus, muffin_oat, muffin_passionfruit, muffin_raspberry, muffin_vanilla]
+
     erb :results
 end
