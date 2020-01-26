@@ -110,12 +110,17 @@ header a, header a:hover, header a:visited {
           justify-content: flex-end;
 }
 
+.feature-top {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .feature-top a, .feature-top a:active, .feature-top a:link, .feature-top a:visited {
   width: 30%;
 }
 
 .goods {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,7 +171,7 @@ header a, header a:hover, header a:visited {
 }
 
 .cookie {
-  height: 8px;
+  height: 1vh;
 }
 
 .top-cookie {
@@ -197,7 +202,6 @@ header a, header a:hover, header a:visited {
 
 .cake {
   width: 100%;
-  max-width: 350px;
 }
 
 .cake-layer {
@@ -281,7 +285,7 @@ header a, header a:hover, header a:visited {
   background-color: rgba(0, 206, 209, 0.4);
   border-radius: 5px;
   position: relative;
-  top: -85px;
+  top: -11vh;
   margin-top: -18vh;
 }
 
@@ -299,7 +303,7 @@ header a, header a:hover, header a:visited {
 }
 
 .display-row {
-  width: 95%;
+  width: 90%;
   height: 0.5vh;
   background-color: rgba(0, 206, 209, 0.7);
   margin: 2px 0 10px 0;
@@ -763,24 +767,14 @@ footer a {
   .navigation-bar a {
     font-size: 1.5rem;
   }
-  .goods {
-    width: 100%;
-  }
-  .cookie {
-    height: 11px;
-  }
   .cookie, .muffintop {
     border-radius: 30px 30px 5px 5px;
   }
-  .cookie, .tin-row, .tin-row1, .tin-row2 {
+  .cookie, .frosting, .tin-row, .tin-row1, .tin-row2 {
     height: 2vh;
   }
   .cherry {
     width: 3vh;
-    height: 3vh;
-  }
-  .frosting {
-    height: 2vh;
   }
   .cake-layer {
     height: 4vh;
@@ -789,31 +783,18 @@ footer a {
     border-radius: 0 0 10px 10px;
   }
   .pedestal {
-    height: 7vh;
+    height: 6vh;
   }
-  .muffintop {
+  .cherry, .muffintop {
     height: 3vh;
   }
   .muffinbot {
-    border-top: 13px solid;
-  }
-  .counter-top {
-    width: 95%;
+    border-top: 11px solid;
   }
   .counter-bottom {
-    width: 90%;
     height: 22vh;
     margin-top: -22vh;
-    top: -67px;
-  }
-  .display-case {
-    top: -29vh;
-  }
-  .display-row {
-    width: 100%;
-  }
-  .floor {
-    height: 10vh;
+    top: -12vh;
   }
   .feature-content {
     -webkit-box-orient: horizontal;
@@ -852,35 +833,24 @@ footer a {
   .bakery-name {
     font-size: 3rem;
   }
-  .cake-layer {
-    height: 5vh;
-  }
-  .pedestal {
-    height: 8vh;
-  }
-  .muffintop {
-    height: 4vh;
-  }
-  .counter-bottom {
-    height: 25vh;
-    margin-top: -25vh;
-    top: -70px;
-  }
-  .display-case {
-    top: -25vh;
+  .feature-top {
+    width: 90%;
   }
   .feature-flex {
     -ms-grid-columns: (26vw)[3];
         grid-template-columns: repeat(3, 26vw);
   }
+  .counter-bottom {
+    width: 75%;
+  }
 }
 
 @media (min-width: 1440px) {
-  .cookie {
-    height: 3vh;
-  }
   .cake-bottom {
     border-radius: 0 0 20px 20px;
+  }
+  .counter-bottom {
+    top: -11vh;
   }
   .feature-flex {
     -ms-grid-columns: (20vw)[4];
@@ -909,10 +879,7 @@ footer a {
     height: auto;
   }
   .counter-bottom {
-    height: 20vh;
-  }
-  .display-case {
-    top: -20vh;
+    top: -9vh;
   }
   .feature-menu-bg {
     top: -5vh;
