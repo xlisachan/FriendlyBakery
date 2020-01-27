@@ -1,4 +1,6 @@
 # <a href="https://madbatterbakery.herokuapp.com">Mad Batter Bakery</a>
+An informational site for a fictitious bakery that displays details about the bakery and goods sold
+
 # Features and Functionality
 * Demonstrated an understanding of how to create a site using Ruby programming language and Sinatra framework
 * Designed the look and feel of the site based on The Mad Hatter from Disney's Alice in Wonderland
