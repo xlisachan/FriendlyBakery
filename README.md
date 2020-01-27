@@ -10,10 +10,10 @@ An informational site for a fictitious bakery that displays details about the ba
 * Utilized CSS animations to draw attention to Easter egg shortcuts
 * Deployed site to Heroku platform
 
+<img style="width: 90%" src="https://github.com/xlisachan/madbatterbakery/blob/master/public/images/Mobile_screenshots.png" alt="mobile screenshots of project"/>
+
 # Built With
 Ruby, Sinatra, HTML5, Sass, Bootstrap
 
 # Deployment
 <a href="https://madbatterbakery.herokuapp.com/">https://madbatterbakery.herokuapp.com/</a>
-
-<img style="width: 90%" src="https://github.com/xlisachan/madbatterbakery/blob/master/public/images/Mobile_screenshots.png" alt="mobile screenshots of project"/>
