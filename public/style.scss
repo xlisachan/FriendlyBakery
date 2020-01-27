@@ -74,7 +74,7 @@ header {
     min-height: 50px;
     border: 2px solid black;
     border-radius: 10px 10px 100px 100px;
-    box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 10px #888888;
     background: repeating-linear-gradient(
         to right,
         $banner-dark,
@@ -88,8 +88,8 @@ header {
 .main-outer {
     width: 90%;
     min-width: 280px;
-    height: 70vh;
-    margin: 2vh auto;
+    height: 65vh;
+    margin: 3vh auto;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -98,7 +98,7 @@ header {
 .gold {
     background-color: gold;
     border-radius: $register-border-radius;
-    box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 10px #888888;
     justify-content: flex-end;
 }
 
@@ -106,6 +106,8 @@ header {
 .feature-top {
     margin: 0 auto;
     width: 100%;
+    position: relative;
+    top: 1vh;
 
     a, a:active, a:link, a:visited {
         width: 30%;
@@ -245,13 +247,13 @@ header {
 
 .counter-bottom {
     width: 85%;
-    height: 18vh;
+    height: 16vh;
     margin: 0 auto;
-    background-color: rgba(0, 206, 209, .4);
+    background-color: rgba(0, 206, 209, 0.4);
     border-radius: 5px;
     position: relative;
-    top: -11vh;
-    margin-top: -18vh;
+    top: -12vh;
+    margin-top: -16vh;
 }
 
 .display-case {
@@ -477,12 +479,27 @@ footer {
     width: 100%;
     text-align: center;
     background: white;
-    
-    a {
-        color: gray;
-        font-size: 2em;
-        padding: 0 10px;
-    }
+}
+
+.social a {
+    color: gray;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+.github-link {
+    color: black;
+    font-family: $footer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 3px 10px 0 0;
+}
+
+.username {
+    font-size: 16px;
+    letter-spacing: normal;
+    padding-left: 3px;
 }
 
 // Animation
@@ -536,6 +553,10 @@ footer {
         font-size: 1.5rem;
     }
 
+    .feature-top {
+        top: 3vh;
+    }
+
     .cookie, .muffintop {
         border-radius: 30px 30px 5px 5px;
     }
@@ -545,7 +566,8 @@ footer {
     }
 
     .cherry {
-        width: 3vh;
+        width: 2.5vh;
+        height: 2.5vh;
     }
 
     .cake-layer {
@@ -560,7 +582,7 @@ footer {
         height: 6vh;
     }
 
-    .cherry, .muffintop {
+    .muffintop {
         height: 3vh;
     }
 
@@ -571,7 +593,7 @@ footer {
     .counter-bottom {
         height: 22vh;
         margin-top: -22vh;
-        top: -12vh;
+        top: -8vh;
     }
 
     .feature-content {
@@ -585,7 +607,7 @@ footer {
     }
 
     .feature-main {
-        height: 64vh;
+        height: 60vh;
     }
 
     .feature-sign {
@@ -627,10 +649,6 @@ footer {
         border-radius: 0 0 20px 20px;
     }
 
-    .counter-bottom {
-        top: -11vh;
-    }
-
     .feature-flex {
         grid-template-columns: repeat(4, 20vw);
     }
@@ -649,6 +667,10 @@ footer {
         font-size: 3rem;
     }
 
+    .feature-top {
+        top: 10px;
+    }
+
     .muffinbot {
         border-top: 25px solid;
     }
@@ -661,10 +683,6 @@ footer {
         width: 30vw;
         height: auto;
     }    
-
-    .counter-bottom {
-        top: -9vh;
-    }
 
     .feature-menu-bg {
         top: -5vh;
